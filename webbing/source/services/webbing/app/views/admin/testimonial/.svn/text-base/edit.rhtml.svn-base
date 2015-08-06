@@ -1,0 +1,9 @@
+<h1>Editing testimonial_entry</h1>
+
+<% form_tag :action => 'update', :id => @testimonial_entry do %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag 'Edit' %>
+<% end %>
+
+<%= link_to 'Show', :action => 'show', :id => @testimonial_entry %> |
+<%= link_to 'Back', :action => 'list' %>

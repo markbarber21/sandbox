@@ -1,0 +1,22 @@
+<!--
+//TODO:
+new Port ent
+ * add entry, redirect w/ related service pre-selected
+
+-->
+
+<h1>New Portfolio Entry</h1>
+
+
+<% form_for(:image, :url => {:action => 'create'}, :html => { :multipart => true }) do |form| %>
+
+<p><label for="image_large">Large</label><br/>
+<%= form.file_field 'uploaded_picture' %></p>
+
+<p><label for="service_entries_selection">Related Service</label><br/>
+<%=collection_select(:portfolio_entry, :service_entry_id, @service_entries, :id, :title) %></p>
+
+<%= render :partial => 'form' %>
+
+<%= submit_tag "Create" %>
+<% end %>

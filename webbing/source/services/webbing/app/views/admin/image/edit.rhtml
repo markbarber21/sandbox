@@ -1,0 +1,17 @@
+<h1>Editing image</h1>
+
+<p>Image <%= @image.id %><br/><%= render :partial => 'shared/image/thumb', :object => @image.id, :locals => {:desc => @image.caption } %></p>
+
+<p>
+<%= render :partial => 'shared/image/show', :object => @image.id, :locals => { :desc => @image.caption } %><br/>
+<a href="<%= url_for :controller => 'admin/image', :action => 'rotate_counter_clockwise', :id => @image.id %>">Rotate Counter-Clockwise</a> | 
+<a href="<%= url_for :controller => 'admin/image', :action => 'rotate_clockwise', :id => @image.id %>">Rotate Clockwise</a>
+</p>
+
+<% form_for :image, :url => { :action => 'update', :id => @image.id }, :html => { :multipart => true } do |form| %>
+  <%= render :partial => 'form', :object => form %>
+  <%= submit_tag 'Edit' %>
+<% end %>
+
+<%= link_to 'Show', :action => 'show', :id => @image %> |
+<%= link_to 'Back', :action => 'list' %>

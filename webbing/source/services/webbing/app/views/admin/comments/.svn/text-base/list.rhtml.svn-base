@@ -1,0 +1,40 @@
+<h1>Listing comments</h1>
+
+<table>
+  <tr>
+  <% for column in Comments.content_columns %>
+    <th><%= column.human_name %></th>
+  <% end %>
+  </tr>
+  
+<% for comments in @comments %>
+  <tr>
+  <% for column in Comments.content_columns %>
+	<%if column.name == "body"%>
+		<td><%=h(comments.send(column.name))%></td>
+	<%elsif column.name == "accepted"%>
+   		<%if (comments.accepted > 0)%>
+      		<td>Yes</td>
+    	<%else%>
+      		<td>-No-</td>
+    	<%end%>
+	<%else%>
+    	<td><%=h comments.send(column.name) %></td>
+	<%end%>
+  <% end %>
+    <td><%= link_to 'Show', :action => 'show', :id => comments %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => comments %></td>
+    <td><%= link_to 'Destroy', { :action => 'destroy', :id => comments }, :confirm => 'Are you sure?', :method => :post %></td>
+	<tr>
+	<td COLSPAN=4 /><td><%= link_to 'Toggle', :action => 'approve', :id => comments %></td>
+	</tr>
+  </tr>
+  <tr><td COLSPAN=7><hr></td></tr>
+  
+<% end %>
+</table>
+
+<%= link_to 'Previous page', { :page => @comments_pages.current.previous } if @comments_pages.current.previous %>
+<%= link_to 'Next page', { :page => @comments_pages.current.next } if @comments_pages.current.next %> 
+
+<br />

@@ -1,0 +1,7 @@
+<%=
+render_admin_menu("News", [
+  link_to("List News", :controller => 'news', :action => 'list'),
+  link_to("Add News",  :controller => 'news', :action => 'new'),
+  link_to("Review Comments", :controller => 'comments', :action => 'list'),
+  ])
+%>

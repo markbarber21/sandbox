@@ -1,0 +1,11 @@
+<% form_for(:image, :url => {:action => 'create'}, :html => { :multipart => true }) do |form| %>
+	<p><label for="image_large">Image</label><br/>
+	<%= form.file_field 'uploaded_picture' %></p>
+
+	<%= render :partial => new_w_image %>
+	<br/>
+	<br/>	
+	<%= submit_tag "Create" %>
+<% end %>
+
+<%= link_to 'Back', :action => 'list' %>

@@ -1,0 +1,7 @@
+<%= error_messages_for 'disclosures' %>
+
+<!--[form:disclosures]-->
+<p><label for="disclosures_description">Description</label><br/>
+<%= text_area 'disclosures', 'description'  %></p>
+<!--[eoform:disclosures]-->
+

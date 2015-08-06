@@ -1,0 +1,46 @@
+<!--
+//TODO? , may not be needed after we list per type
+* List Portfolio entries, show related name, not id
+-->
+
+<h1>Listing portfolio_entries</h1>
+
+<div id="admin-list">
+	<table cellpadding="5" cellspacing="0">
+	  <tr>
+	  <% for column in PortfolioEntry.content_columns %>
+	    <th><%= column.human_name %></th>
+	  <% end %>
+		<th>
+			Service ID
+		</th>	
+	  </tr>	
+  
+	<% for portfolio_entry in @portfolio_entries %>
+	  <tr valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
+
+	  <% for column in PortfolioEntry.content_columns %>
+	    <td><%=h portfolio_entry.send(column.name) %></td>
+	  <% end %>
+		<td><%=h portfolio_entry.service_entry_id %></td>
+	
+		<td>
+		<%if portfolio_entry.image_id%>
+			<%= render(:partial => "shared/image/thumb", :object =>portfolio_entry.image_id, :locals => {:desc => portfolio_entry.description}) %> 
+		<%end%>
+		</td>	
+	
+	    <td><%= link_to 'Show', :action => 'show', :id => portfolio_entry %></td>
+	    <td><%= link_to 'Edit', :action => 'edit', :id => portfolio_entry %></td>
+	    <td><%= link_to 'Destroy', { :action => 'destroy', :id => portfolio_entry }, :confirm => 'Are you sure?', :method => :post %></td>
+	  </tr>
+	<% end %>
+	</table>
+</div>
+
+<%= link_to 'Previous page', { :page => @portfolio_entry_pages.current.previous } if @portfolio_entry_pages.current.previous %>
+<%= link_to 'Next page', { :page => @portfolio_entry_pages.current.next } if @portfolio_entry_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New portfolio_entry', :action => 'new' %>

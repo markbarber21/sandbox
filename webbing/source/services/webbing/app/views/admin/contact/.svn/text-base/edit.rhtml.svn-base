@@ -1,0 +1,2 @@
+<h1>Editing contact</h1>
+<%= render(:partial => "shared/admin/edit_object", :object =>@contact, :locals => {:object_name => 'contact'}) %>

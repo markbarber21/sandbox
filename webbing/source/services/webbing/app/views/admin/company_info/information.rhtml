@@ -1,0 +1,15 @@
+<h1>Company Information</h1>
+<% none = '<br/>&lt;none&gt;' %>
+<% form_tag({:action => 'update_information'}, {:multipart => true}) do %>
+
+  <p>Company Name:<br/><%= text_field_tag(:company_name, @customer_props[:company_name], :size => 50) %></p>
+  <p>Welcome Text:<br/><%= text_area_tag(:welcome_text, @customer_props[:welcome_text], :size => '60x20') %></p>
+  <p>Company Description:<br/><%= text_area_tag(:company_description, @customer_props[:company_description], :size => '60x20') %></p>
+
+  <a href='http://textism.com/tools/textile/'>Formatting allowed in these fields. Testism.</a>
+  <br/>
+  <br/>
+  
+  <%= submit_tag "Update" %>
+<% end %>
+<br/>

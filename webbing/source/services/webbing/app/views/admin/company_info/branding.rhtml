@@ -1,0 +1,16 @@
+<h1>Branding</h1>
+<% form_tag({:action => 'update_branding'}, {:multipart => true}) do %>
+  <% @branding_images.each do |hash| %>
+  <div class="branding_image">
+    <h3><%= hash[:name] %></h3>
+    <% if DbFile.exists(hash[:file]) %>
+      <p><img alt="<%= hash[:image] %>" src="<%= url_for :controller => 'image', :action => hash[:image] %>" /></p>
+      <p><%= check_box_tag hash[:remove] %>Remove <%= hash[:name] %></p>
+    <% else %>
+      <p><%= hash[:name] %> has not been uploaded.</p>
+    <% end %>
+    Upload <%= file_field_tag hash[:upload] %>
+  </div>
+  <% end %>
+  <%= submit_tag "Update" %>
+<% end %>

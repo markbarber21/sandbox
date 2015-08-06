@@ -1,0 +1,17 @@
+<%= error_messages_for 'portfolio_entry' %>
+
+<!--[form:portfolio_entry]-->
+<%= render(:partial => "shared/admin/form_change_image", :object => 'portfolio_entry') %>
+
+<p><label for="portfolio_entry_title">Title</label><br/>
+<%= text_field 'portfolio_entry', 'title'  %></p>
+
+<p><label for="portfolio_entry_description">Description</label><br/>
+<%= text_area 'portfolio_entry', 'description'  %></p>
+
+<p><label for="portfolio_entry_sort_order">Sort Priority</label><br/>
+The higher the value, the earlier it will appear.<br/>
+<%= text_field 'portfolio_entry', 'sort_order'  %></p>
+
+<!--[eoform:portfolio_entry]-->
+

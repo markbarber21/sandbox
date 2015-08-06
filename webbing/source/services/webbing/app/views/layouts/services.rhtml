@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+				
+<html>
+<head>
+  <title><%= @customer_props[:company_name] %></title>
+  <link rel="icon" type="image/png" href="/services/web_icon/" />
+  <link rel="shortcut icon" type="image/png" href="/services/web_icon/" />
+  
+  <%= stylesheet_link_tag "lightbox", :media => "all" %>
+  <script type="text/javascript" src="/javascripts/lightbox.js"></script>
+  <%= stylesheet_link_tag "scaffold" %>
+  <%= render(:partial => "shared/style/scaffold")%>
+  <%= render(:partial => "shared/style/style1")%>
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/services/news_rss/" />
+</head>
+<body id="admin">
+  <div id="banner">
+		<%if DbFile.exists(Values::BannerImageFile)%>
+			<a href="/">
+					<img alt="banner_image" src="<%= url_for :controller => '/services', :action => 'banner_image' %>" />
+			</a>
+		<%end%>
+  <%= @customer_props[:company_name] %>
+  </div>
+  <div id="columns">
+    <div id="side">
+		<div style="float: left" id="my_menu" class="sdmenu">
+
+	      <p>
+	        <%= link_to "Services", {:action => 'services'}, :class => 'main_link' -%><br/>       
+						
+			<%if (!@customer_props[:disabled_testimonials])%>
+				<%= link_to "Testimonials",  {:action => 'testimonials'}, :class => 'main_link' %><br/>
+			<%end%>
+	
+			<%if (!@customer_props[:disabled_contacts])%>
+	        	<%= link_to "Contact Us",  {:action => 'contact'}, :class => 'main_link' %><br/>
+			<%end%>
+			
+			<%if (!@customer_props[:disabled_news])%>
+	        	<%= link_to "News",  {:action => 'news'}, :class => 'main_link' %><br/>
+			<%end%>
+			
+			<%if (!@customer_props[:disabled_recommendations])%>
+	        	<%= link_to "Links",  {:action => 'links'}, :class => 'main_link' %><br/>
+			<%end%>
+	      </p>
+		</div>
+		
+		<%if DbFile.exists(Values::SidebarImageFile)%>
+			<div id="side_image">
+				<img alt="sidebar_image" src="<%= url_for :controller => '/services', :action => 'sidebar_image' %>" />
+			</div>
+		<%end%>
+		
+	</div>
+    <div id="main">
+		<div id="main_inner">
+		    <% if flash[:notice] -%>
+		      <div id="notice"><%= flash[:notice] %></div>
+		    <% end -%>
+		      <%= yield :layout %>
+
+			<%= render(:partial => "shared/disclosures") %>
+		</div>
+    </div>
+  </div>
+</body>
+</html>

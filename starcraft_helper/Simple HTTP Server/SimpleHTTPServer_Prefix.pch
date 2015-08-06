@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Web2PDF Server' target in the 'Web2PDF Server' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

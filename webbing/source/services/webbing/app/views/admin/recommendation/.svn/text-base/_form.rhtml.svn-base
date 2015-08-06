@@ -1,0 +1,12 @@
+<%= error_messages_for 'recommendations' %>
+
+<!--[form:recommendations]-->
+<%= render(:partial => "shared/admin/form_change_image", :object => 'recommendations') %>
+
+<p><label for="recommendations_title">Title</label><br/>
+<%= text_field 'recommendations', 'title'  %></p>
+
+<p><label for="recommendations_link">Link</label><br/>
+<%= text_area 'recommendations', 'link'  %></p>
+<!--[eoform:recommendations]-->
+

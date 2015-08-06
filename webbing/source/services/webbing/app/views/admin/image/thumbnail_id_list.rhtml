@@ -1,0 +1,13 @@
+<h1>Images and ID's</h1>
+
+<% for image in @images %>
+	<div id="id_list_thumb">
+		<td><%=image.id%></td>
+		<td><%=render(:partial => "shared/image/thumb", :object => image, :locals => {:desc => image.caption})%></td>		
+	</div>
+<%end%>
+
+<%= link_to 'Previous page', { :page => @image_pages.current.previous } if @image_pages.current.previous %>
+<%= link_to 'Next page', { :page => @image_pages.current.next } if @image_pages.current.next %> 
+
+<br />

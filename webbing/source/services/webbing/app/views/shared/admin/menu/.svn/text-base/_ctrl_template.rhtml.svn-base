@@ -1,0 +1,107 @@
+<!--
+//TODO:
+* quick logout button on admin
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Administer My Site</title>
+<link rel="icon" type="image/png" href="/sitewebbing.png/" />
+<link rel="shortcut icon" type="image/png" href="/sitewebbing.png/" />
+
+
+<%= stylesheet_link_tag "scaffold" %>
+<%= stylesheet_link_tag "admin" %>
+<%= stylesheet_link_tag "admin_menu" %>
+<!--<link rel="stylesheet" type="text/css" href="/stylesheets/sdmenu.css" />-->
+
+<%= render(:partial => "shared/style/scaffold")%>
+<%= render(:partial => "shared/style/admin")%>
+
+<!--<script type="text/javascript" src="/javascripts/sdmenu.js">-->
+<!--	/***********************************************-->
+<!--	* Slashdot Menu script- By DimX-->
+<!--	* Submitted to Dynamic Drive DHTML code library: http://www.dynamicdrive.com-->
+<!--	* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code-->
+<!--	***********************************************/-->
+<!--</script>-->
+<script type="text/javascript" src="/javascripts/lightbox.js"></script>
+<!--<script type="text/javascript">-->
+<!--var myMenu;-->
+<!--window.onload = function() {-->
+<!--	myMenu = new SDMenu("my_menu");-->
+<!--    myMenu.speed = 5;-->
+<!--    myMenu.oneSmOnly = true;-->
+<!--	myMenu.init();-->
+<!--};-->
+<!--</script>-->
+				
+<script type="text/javascript" src="/javascripts/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="/javascripts/ddaccordion.js">
+
+/***********************************************
+* Accordion Content script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Visit http://www.dynamicDrive.com for hundreds of DHTML scripts
+* This notice must stay intact for legal use
+***********************************************/
+
+</script>
+<script type="text/javascript">
+
+ddaccordion.init({
+	headerclass: "admin_menu_header", //Shared CSS class name of headers group
+	contentclass: "admin_menu_content", //Shared CSS class name of contents group
+	revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click", "clickgo", or "mouseover"
+	mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+	collapseprev: true, //Collapse previous content (so only one open at any time)? true/false
+	defaultexpanded: [0], //index of content(s) open by default [index1, index2, etc] [] denotes no content
+	onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+	animatedefault: false, //Should contents open by default be animated into view?
+	persiststate: true, //persist state of opened contents within browser session?
+	toggleclass: ["", "admin_menu_header_open"], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+	togglehtml: ["", "", ""], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+	animatespeed: "fast", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+	oninit:function(headers, expandedindices){ //custom code to run when headers have initalized
+		//do nothing
+	},
+	onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+		//do nothing
+	}
+})
+
+</script>
+
+</head>
+<body id="admin">
+  <div id="banner">
+  <%= image_tag("logo.png") %>
+  <%= @page_title || "Login Management" %>
+  </div>
+  <div id="columns">
+    <div id="side">
+        <!--<div style="float: left" id="my_menu" class="sdmenu">-->
+        <div style="float: left", id="admin_menu">
+			<%= render(:partial => "shared/admin/menu/company_info") %>
+			<%= render(:partial => "shared/admin/menu/image_menu") %>
+			<%= render(:partial => "shared/admin/menu/contact_menu") %>
+			<%= render(:partial => "shared/admin/menu/news_menu") %>
+			<%= render(:partial => "shared/admin/menu/service_menu") %>
+			<!--<%= render(:partial => "shared/admin/menu/portfolio_menu") %>-->
+			<%= render(:partial => "shared/admin/menu/testimonial_menu") %>
+			<%= render(:partial => "shared/admin/menu/recommendation_menu") %>
+			<%= render(:partial => "shared/admin/menu/disclosure_menu") %>
+			
+			<%= render(:partial => "shared/admin/menu/user_menu") %>
+        </div>
+	</div>
+    <div id="main">
+    <% if flash[:notice] -%>
+      <div id="notice"><%= flash[:notice] %></div>
+    <% end -%>
+      <%= yield :layout %>
+    </div>
+  </div>
+</body>
+</html>

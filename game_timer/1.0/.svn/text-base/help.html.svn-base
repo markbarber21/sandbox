@@ -1,0 +1,68 @@
+<h1> Application Controls </h1>
+
+<LI> You can hold and drag plus and minus buttons, to make time really fly.
+<LI> Chess and Go/Weiqi start times can be adjusted, or set for handicapped, during game play when the round is paused or has not yet began.  Simply click and hold your button, then slide your finger outside of the button area and let go.  This will feel like you are flicking time toward your opponents play area.  Your opponent will receive a 30 second time bonus for every gesture.
+<LI> Hold and drag the minus button at the far left (under the hour label) to reset the 'Total Start Time' back to zero.
+
+<h1> TIMERS </h1>
+
+<h3> Count Down: </h3>
+<LI> The 'Total Start Time' you specify counts down to zero.
+<LI> Reset will take the time back to the original 'Total Start Time'.
+<LI> Restart will 'Reset' and 'Start' the clock.
+
+<h3>Count Up: </h3>
+<LI> Timer will count time up from zero.
+<LI> Reset will take the time back to zero.
+<LI> Restart will 'Reset' and 'Start' the clock.
+
+
+<h1> Chess Clocks </h1>
+
+<h3>Sudden Death: </h3>
+<LI> The 'Total Start Time' you specify counts down to zero.
+<LI> First player to run out of time losses due to time.  This is the same for all two player clocks.
+
+<h3>Hour Glass: </h3>
+<LI> The 'Total Start Time' is split between players.  
+<LI> When one player is using time, the opposite player will gain time, much like the flipping of an Hour Glass.
+
+<h3>Fischer: </h3>
+<LI> Time will count down to zero for each player.
+<LI> At the end of your turn you will receive the additional amount of time configured before game play began.
+
+<h3>Bronstein: </h3>
+<LI> Time will count down to zero for each player.
+<LI> At the end of your turn you will receive a time bonus.
+<UL>
+ <LI> If you used less than the allotted time bonus, your time will be reset to its value before the turn began.
+ <LI> If you used more than the allotted time bonus, the whole time bonus will be added to your current total.
+</UL>
+<LI> Note: If you make your move within the time bonus, you will not have spent any of your allotted time.
+
+<h3>Simple Delay:</h3>
+<LI> A players clock will wait for the configured delay period before it begins to count down.
+
+
+<h1> Go/Weiqi Clocks </h1>
+
+<h3>Canadian: </h3>
+<LI> A player must complete the specified number of moves before the clock expires.
+<LI> Once the specified number of moves is made, the clock and number of moves are reset.
+<LI> If a player fails to complete their moves before time expires, they lose due to time.
+
+<h3>Japanese or Byo-yomi: </h3>
+<LI> Completing your turn within a period of time will reset the current period to the 'Time per-period' specified.
+<LI> For example, if a player always moves within the 'Time per-period', they will always have the same number of periods they began with.
+<LI> If a player's clock reaches zero and they have used all allotted periods, they lose.
+
+<h3>Japanese Overtime or Byo-yomi Overtime: </h3>
+<LI> The 'Total Start Time' which is specified, will be used as the Main Time for the game.  This is similar to a Sudden-Death game.
+<LI> Once the 'Total Start Time' is exhausted for a player, their clock falls into the classic Japanese or Byo-yomi game.
+<LI> Completing your turn within a period of time will reset the current period to the 'Time per-period' specified.
+<LI> If a player's clock reaches zero and they have used all allotted periods, they lose.
+
+
+
+
+

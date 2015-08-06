@@ -1,0 +1,16 @@
+<h1>Editing portfolio_entry</h1>
+
+<% form_tag :action => 'update', :id => @portfolio_entry do %>
+
+  <p><label for="service_entry_id">Related Service</label><br/>
+  <%= collection_select(:portfolio_entry, :service_entry_id, @service_entries, :id, :title) %></p>
+
+  <%= render :partial => 'form' %>
+  <%= submit_tag 'Save' %>
+<% end %>
+
+<%= link_to 'Show', :action => 'show', :id => @portfolio_entry %> |
+<%= link_to 'Back', :action => 'list' %>
+
+
+<%#= render(:partial => "shared/admin/edit_object", :object =>@portfolio_entry, :locals => {:object_name => 'portfolio_entry'}) %>

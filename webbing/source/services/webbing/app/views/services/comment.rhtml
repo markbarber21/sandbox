@@ -1,0 +1,18 @@
+<% form_for(:comment, :url => {:action => 'create_comment'}, :html => { :multipart => true }) do |form| %>
+
+	<%= error_messages_for 'comment' %>
+
+	<!--[form:news]-->
+	<p><label for="comment_body">Body of Comment</label><br/>
+	<%= text_area 'comment', 'body'  %></p>
+
+	<p><label for="comment_who">Who is making the Comment</label><br/>
+	<%= text_field 'comment', 'who'  %></p>
+	
+	<p>
+	<%= hidden_field 'comment', 'news_id', {:value => "#{@news.id}"}%></p>
+
+	<%= submit_tag "Add Comment" %>
+<% end %>
+
+<br/>

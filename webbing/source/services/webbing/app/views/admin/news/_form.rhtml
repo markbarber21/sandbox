@@ -1,0 +1,18 @@
+<%= error_messages_for 'news' %>
+
+<!--[form:news]-->
+<%= render(:partial => "shared/admin/form_change_image", :object => 'news') %>
+
+<p><label for="news_title">Title of post</label><br/>
+<%= text_field 'news', 'title'  %></p>
+
+<!-- <p><label for="news_when_created">When created</label><br/>
+<%= date_select 'news', 'when_created'  %></p> -->
+
+<p><label for="news_who">Posted by</label><br/>
+<%= text_field 'news', 'who'  %></p>
+
+<p><label for="news_body">Body/Contents</label><br/>
+<%= text_area 'news', 'body'  %></p>
+<!--[eoform:news]-->
+

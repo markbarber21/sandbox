@@ -1,0 +1,9 @@
+<h1>Editing disclosures</h1>
+
+<% form_tag :action => 'update', :id => @disclosures do %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag 'Edit' %>
+<% end %>
+
+<%= link_to 'Show', :action => 'show', :id => @disclosures %> |
+<%= link_to 'Back', :action => 'list' %>

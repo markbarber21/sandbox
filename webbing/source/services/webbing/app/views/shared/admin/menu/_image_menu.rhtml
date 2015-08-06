@@ -1,0 +1,7 @@
+<%=
+render_admin_menu("Images", [
+  link_to("List Images", :controller => 'image', :action => 'list'),
+  link_to("Thumb/ID List", :controller => 'image', :action => 'thumbnail_id_list'),
+  link_to("Add Image",   :controller => 'image', :action => 'new'),
+  ])
+%>

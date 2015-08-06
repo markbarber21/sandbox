@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="b5f09e66-966e-984f-b6e5-1f449d782dd2" kpf_version="4" name="sitewebbing.kpf">
+<livefolder id="0e7700c0-8f42-f04b-9ef1-560bf7e87baa" idref="b5f09e66-966e-984f-b6e5-1f449d782dd2" name="app" url="source/services/webbing/app">
+</livefolder>
+<file id="71b0237a-7021-da48-9cff-fcac1279a96d" idref="b5f09e66-966e-984f-b6e5-1f449d782dd2" name="application.rb" url="source/services/webbing/app/controllers/application.rb">
+</file>
+<livefolder id="7a1d7af6-2348-8745-be67-6e17dbcd8aa3" idref="b5f09e66-966e-984f-b6e5-1f449d782dd2" name="lib" url="source/services/webbing/lib">
+</livefolder>
+<livefolder id="83eca0b0-a6bc-4a41-afa3-611b8194ade7" idref="b5f09e66-966e-984f-b6e5-1f449d782dd2" name="test" url="source/services/webbing/test">
+</livefolder>
+<livefolder id="c72f3be3-c24b-2640-ba18-0849df833948" idref="b5f09e66-966e-984f-b6e5-1f449d782dd2" name="migrate" url="source/services/webbing/db/migrate">
+</livefolder>
+<preference-set idref="b5f09e66-966e-984f-b6e5-1f449d782dd2">
+  <string id="import_exclude_matches">*.*~;*.bak;*.tmp;CVS;.#*;*.pyo;*.pyc;.svn;*%*;tmp*.html;.DS_Store</string>
+  <string id="import_include_matches"></string>
+  <boolean id="import_live">0</boolean>
+  <boolean id="import_recursive">0</boolean>
+  <string id="import_type">makeFlat</string>
+</preference-set>
+</project>

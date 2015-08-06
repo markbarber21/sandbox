@@ -1,0 +1,12 @@
+<h1>Section Settings</h1>
+<% none = '<br/>&lt;none&gt;' %>
+<% form_tag({:action => 'update_section_settings'}, {:multipart => true}) do %>
+
+	<p>Disable Contacts:<br/><%= check_box_tag("disabled_contacts", "disabled_contacts", @customer_props[:disabled_contacts]) %></p>
+	<p>Disable News:<br/><%= check_box_tag("disabled_news", "disabled_news", @customer_props[:disabled_news]) %></p>
+	<p>Disable Testimonials:<br/><%= check_box_tag("disabled_testimonials", "disabled_testimonials", @customer_props[:disabled_testimonials]) %></p>
+	<p>Disable Recommendations:<br/><%= check_box_tag("disabled_recommendations", "disabled_recommendations", @customer_props[:disabled_recommendations]) %></p>
+  
+  <%= submit_tag "Update" %>
+<% end %>
+<br/>

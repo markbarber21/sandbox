@@ -1,0 +1,22 @@
+<h1>Editing comments</h1>
+
+<% form_tag :action => 'update', :id => @comments do %>
+
+<%= error_messages_for 'comments' %>
+
+<p><label for="comments_body">Body</label><br/>
+<%= text_area 'comments', 'body'%></p>
+
+<p><label for="comments_who">Who</label><br/>
+<%= text_field 'comments', 'who'%></p>
+
+<p><label for="comments_accepted">Accepted/Display</label><br/>
+<%= check_box 'comments', 'accepted'  %></p>
+
+
+
+  <%= submit_tag 'Save' %>
+<% end %>
+
+<%= link_to 'Show', :action => 'show', :id => @comments %> |
+<%= link_to 'Back', :action => 'list' %>

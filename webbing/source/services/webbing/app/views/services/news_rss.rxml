@@ -1,0 +1,32 @@
+xml.instruct!
+
+xml.rss "version" => "2.0", "xmlns:dc" => "http://purl.org/dc/elements/1.1/" do
+ xml.channel do
+
+   xml.title       "#{@customer_props[:company_name]} News"
+   xml.link        url_for :only_path => false, :controller => 'services'
+   xml.description "#{@customer_props[:company_description]} News"
+
+   @news.each do |news_entry|
+     xml.item do
+       xml.title       news_entry.title
+       xml.link        url_for :only_path => false, :controller => 'services', :action => 'read_news', :id => news_entry.id
+       xml.description textilize_links(news_entry.body)
+       xml.guid        url_for :only_path => false, :controller => 'services', :action => 'read_news', :id => news_entry.id
+       xml.author      news_entry.who
+
+     	 if news_entry.image_id
+         xml.image do
+                 xml.url render(:partial => "shared/image/show", :object =>news_entry.image_id, :locals => {:desc => news_entry.title})
+                 xml.link url_for(:only_path => false)
+                 xml.title news_entry.title
+                 xml.width 100
+                 xml.height 100
+             end
+       end
+
+     end
+   end
+
+ end
+end

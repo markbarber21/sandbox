@@ -1,0 +1,105 @@
+[ Dev Items ]
+	change GameType to a NSDictionary, only take objective c objective objects, NSNumber, etc
+	cleanup the configs
+	NSClassfromString 
+	StringFromNSClass(ish)
+	Class temp = [NSUserDefaults class];
+	"alertView:(UIAlertView *)alertView" test off of alertView
+[ Features ]
+[ Branding ]
+[ Store Post ]
+
+	[Description]
+	
+
+	http://www.litdark.com/boardgametimer.html
+	
+	
+Board Game Timer is an all timing application for Board Games.
+Timers Include:
+ * Countdown timer, also known as an egg timer.
+ * Count up timer, or stopwatch.
+ * Chess Clocks
+	- Sudden Death
+	- Hour Glass
+	- Fischer
+	- Bronstein
+	- Simple Delay
+ * Go / Weiqi / Tfd See 围棋 or Tfd Tfd 圍棋
+	- Canadian
+	- Japanese, also known as Standard Byo-yomi.
+	- Japanese Overtime, or Byo-yomi Overtime.
+	
+* Application will not dim or sleep during game play.
+* Tournament style interface.
+* You may increment a single players time, giving a handicap.
+* Very simple interface.
+* Every clock and timer remembers its initial configuration.	
+
+
+[Keywords]
+Board Game Timer chess clock Go 圍棋 Baduk Hour Glass Fischer Bronstein Japanese Byo-yomi Canadian
+
+Games with timers:
+ - Chess
+ - Go / Wei Qi / Baduk / whatever
+ - Pictionary
+ - Time's Up
+ - Wits & Wagers
+ - Catch Phrase
+ - Scattergories
+ - Make-n-Break
+ - Why Did the Chicken...?
+ - Taboo
+ - Outburst!
+ - Cranium
+ - Charades
+ 
+ - Xiang Qi / Ë±°Ê£ã
+ - Octi
+ - Quoridor
+ - Hex
+ - Project GIPF
+   - DVONN
+   - GIPF
+   - P√úNCT
+   - TZAAR
+   - YINSH
+   - Z√àRTZ
+ - Domination
+ - Arimaa
+ - Shogi (japanese chess)
+
+
+--- do it, same as saying your headphones are iPod compatible.
+
+TradeMark search
+<http://tess2.uspto.gov/bin/gate.exe?f=searchss&state=4008:t7f7g4.1.1>
+
+<http://wiki.answers.com/Q/Can_you_use_a_company_name_that_has_been_trademarked>
+ Fair use
+If by "use a company name", you mean "refer to a company name" that has been trademarked, e.g., use it for comparison, or to link to their website, or say you live next door to it, the rules are different. You may legally "use" the name XYZ in your own materials (say, an eBay advertisement) if all you're saying is that the product was made by XYZ (click here for their product info), or even that the thing you're selling is compatible with XYZ. Similarly, in advertising your own products, you could say that yours is "a working replacement for XYZ" or "better than XYZ" if you have proof that the statement is true. You can say, "we hired all the former XYZ engineers before the company collapsed", as long as it's true.
+
+However, you may not use a company name that is trademarked if all you're doing is coat-tailing on the fame of its trademark, such as "Our Disney souvenirs are cheaper than the licensed ones!" Many large companies also strongly object to your use of their brand names in meta-tags or hidden text on websites, let alone using their proprietary graphics as "links" to their websites without a license. They have the right to control the source and quality of any affiliate, and to prevent others from falsely claiming an affiliation.
+
+Even under so-called "fair use" of a product trademark, you may still get sued for mis-use and it will cost you thousands of dollars in attorneys' fees even to reach a settlement.
+
+
+[ From Jon ]
+
+
+ 
+Notes:
+
+-----
+ - I really dislike the sounds when you click the buttons. It sounds squeaky and broken.
+
+- If I pause during my turn in Bronstein and Fischer modes, and then restart by click my button, I don't receive my bonus time. It might make sense to have the pause state remember who's turn it is. You can unpause by clicking the "inactive" button, or by clicking "pause" again (maybe it's label changes to "resume").  
+- Visual pause indication would be nice, especially in count-down/count-up
+
+
+ - In landscape mode, the in-game view is still rotating as it flips over, and it looks funny now, probably because you can see the black rectangle of the view rotating into a white background (before it was white on white, so you couldn't see the edges.
+ 
+ - white "tearing" on black edges of the view when rotating portrait to landscape and back. Probably an animation bug in the framework, but if that view is on top of something, maybe it can be fixed by setting the background color of the underlying view?
+
+ - Entire background darkens when you tap to start/stop either of the "counter" modes.

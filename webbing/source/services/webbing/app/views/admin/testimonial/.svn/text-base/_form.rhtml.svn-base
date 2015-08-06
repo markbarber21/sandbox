@@ -1,0 +1,10 @@
+<%= error_messages_for 'testimonial_entry' %>
+
+<!--[form:testimonial_entry]-->
+<p><label for="testimonial_entry_customer_name">Customer name</label><br/>
+<%= text_field 'testimonial_entry', 'customer_name'  %></p>
+
+<p><label for="testimonial_entry_testimonial">Testimonial</label><br/>
+<%= text_area 'testimonial_entry', 'testimonial'  %></p>
+<!--[eoform:testimonial_entry]-->
+

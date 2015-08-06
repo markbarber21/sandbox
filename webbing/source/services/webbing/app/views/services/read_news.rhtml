@@ -1,0 +1,21 @@
+<div id="news-list">
+	<div class="news-title"><%=@news.title%></div>
+	<div class="news-who">Posted by: <%=@news.who%></div>
+
+	<div class="news-body">
+		<%=textilize_links(@news.body)%>
+	</div>
+
+	<%if @news.image_id%>
+		<div id="gallery_image_right">
+			<%= render(:partial => "shared/image/show", :object =>@news.image_id, :locals => {:desc => @news.title}) %>
+		</div>
+	<%end%>
+
+	<a class="news-posted">Posted: <%=@news.when_created%></a>
+	<hr>
+
+	<%= link_to 'News Blog, add Comments Here', :controller => "services", :action => 'news' %>
+</div>
+
+<br/>

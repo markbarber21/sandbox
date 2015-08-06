@@ -1,0 +1,6 @@
+<%=
+render_admin_menu("Service Entries", [
+  link_to("List Service Entries", :controller => 'portfolio', :action => 'list'),
+  link_to("Add Entry",   :controller => 'portfolio', :action => 'new'),
+  ])
+%>

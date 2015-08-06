@@ -1,0 +1,54 @@
+<div id="news-list">
+	<% for news in @news %>
+	<div class="news-title"><%=news.title%></div>
+	<div class="news-who">Posted by: <%=news.who%></div>
+
+	<div class="news-body">
+		<%=textilize_links(news.body)%>
+	</div>
+	
+	<%if news.image_id%>
+		<div id="gallery_image_right">
+			<%= render(:partial => "shared/image/show", :object =>news.image_id, :locals => {:desc => news.title}) %>
+		</div>
+	<%end%>	
+	
+	<div class="news-posted">Posted: <%=news.when_created%></div>
+	
+	<!-- COMMENTS -->
+	
+	<%@comments = Comment.find(:all, :conditions => "news_id='#{news.id}'")%>
+	
+	<%if @comments.size > 0%>
+		<div class="comment-block">
+			<div class="comment-caption">Comments:</div>		
+			<% for comment in @comments%>
+				<%if comment.accepted != 0%>		
+					<div class="comment-who">Comment by: <%=comment.who%>, <%=comment.when_created%></div>		
+					<div class="comment-body"><%=textilize_links(h (comment.body))%></div>
+					<br/>
+				<%end%>
+			<%end%>	
+		</div>
+	<%end%>	
+
+	<div class="news-comment"><a href="/services/comment/<%=news.id%>">Add Comment</a></div>	
+	<br/>
+	<hr>
+	<% end %>
+
+	<div class="news-links">
+		<div class="news-order">
+			<%= link_to '<< Oldest', {:page => @news_pages[@news_pages.last_page]} if @news_pages.current != @news_pages.last_page%> 
+			<%= link_to '<  Previous', {:page => @news_pages.current.next} if @news_pages.current.next %> 
+			<%= link_to 'Next >', { :page => @news_pages.current.previous } if @news_pages.current.previous %>
+			<%= link_to 'Newest >>', {:page => @news_pages[@news_pages.first_page]} if @news_pages.current != @news_pages.first_page%> 
+		</div>
+		<div class="news-archive">
+			<%= link_to '- Archive -', {:controller => 'services', :action => :news_archive} if @news_pages.current.next %>
+		</div>
+	</div>
+	
+	<br/>
+	<br/>
+<div>

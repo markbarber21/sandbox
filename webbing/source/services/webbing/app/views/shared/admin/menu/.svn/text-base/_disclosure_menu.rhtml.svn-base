@@ -1,0 +1,6 @@
+<%=
+render_admin_menu("Disclosures", [
+  link_to("Disclosure Entries", :controller => 'disclosure', :action => 'list'),
+  link_to("Add Disclosure",   :controller => 'disclosure', :action => 'new'),
+  ])
+%>

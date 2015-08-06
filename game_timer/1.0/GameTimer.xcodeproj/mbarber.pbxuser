@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* GameTimerAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {833, 990}}";
+			sepNavSelRange = "{715, 0}";
+			sepNavVisRange = "{0, 1200}";
+			sepNavWindowFrame = "{{565, 292}, {892, 1118}}";
+		};
+	};
+	1D3623250D0F684500981E51 /* GameTimerAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {950, 1911}}";
+			sepNavSelRange = "{2666, 0}";
+			sepNavVisRange = "{1820, 2073}";
+			sepNavWindowFrame = "{{610, 146}, {976, 1001}}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* Board Game Timer */ = {
+		activeExec = 0;
+		executables = (
+			F86C6E5011C3EF050040C1D0 /* Board Game Timer */,
+		);
+	};
+	28042007108E984D000629CD /* RootViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1335, 990}}";
+			sepNavSelRange = "{1007, 16}";
+			sepNavVisRange = "{0, 1468}";
+			sepNavWindowFrame = "{{403, 288}, {892, 1118}}";
+		};
+	};
+	28042008108E984D000629CD /* RootViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1496, 6269}}";
+			sepNavSelRange = "{11055, 14}";
+			sepNavVisRange = "{9311, 2528}";
+			sepNavWindowFrame = "{{1010, 127}, {1029, 1201}}";
+		};
+	};
+	28042009108E984D000629CD /* DetailViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {970, 1073}}";
+			sepNavSelRange = "{377, 0}";
+			sepNavVisRange = "{0, 377}";
+			sepNavWindowFrame = "{{447, 217}, {1029, 1201}}";
+		};
+	};
+	2804200A108E984D000629CD /* DetailViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {970, 1073}}";
+			sepNavSelRange = "{816, 0}";
+			sepNavVisRange = "{0, 1162}";
+			sepNavWindowFrame = "{{1253, 100}, {1029, 1201}}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Distribution;
+		activeExecutable = F86C6E5011C3EF050040C1D0 /* Board Game Timer */;
+		activeSDKPreference = iphoneos3.2;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Board Game Timer */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Board Game Timer */,
+		);
+		breakpoints = (
+		);
+		codeSenseManager = F86C6E6811C3EF0D0040C1D0 /* Code sense */;
+		executables = (
+			F86C6E5011C3EF050040C1D0 /* Board Game Timer */,
+		);
+		perUserDictionary = {
+			"PBXConfiguration.PBXBreakpointsDataSource.v1:1CA1AED706398EBD00589147" = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBreakpointsDataSource_BreakpointID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					198,
+					20,
+					99,
+					99,
+					29,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBreakpointsDataSource_ActionID,
+					PBXBreakpointsDataSource_TypeID,
+					PBXBreakpointsDataSource_BreakpointID,
+					PBXBreakpointsDataSource_UseID,
+					PBXBreakpointsDataSource_LocationID,
+					PBXBreakpointsDataSource_ConditionID,
+					PBXBreakpointsDataSource_IgnoreCountID,
+					PBXBreakpointsDataSource_ContinueID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					336,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					296,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 306638950;
+			PBXWorkspaceStateSaveDate = 306638950;
+		};
+		perUserProjectItems = {
+			F86C6EAE11C3F39D0040C1D0 /* PBXTextBookmark */ = F86C6EAE11C3F39D0040C1D0 /* PBXTextBookmark */;
+			F8A6A8721246F06D00610ED1 /* PBXBookmark */ = F8A6A8721246F06D00610ED1 /* PBXBookmark */;
+			F8A6A8781246F08300610ED1 /* PlistBookmark */ = F8A6A8781246F08300610ED1 /* PlistBookmark */;
+		};
+		sourceControlManager = F86C6E6711C3EF0D0040C1D0 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	29B97316FDCFA39411CA2CEA /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {932, 342}}";
+			sepNavSelRange = "{310, 3}";
+			sepNavVisRange = "{0, 357}";
+		};
+	};
+	8D1107310486CEB800E47090 /* GameTimer-Info.plist */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{2779, 268}, {1080, 1154}}";
+		};
+	};
+	F80E9AC511D9A30B002C2E91 /* Entitlements.plist */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{2867, 369}, {732, 999}}";
+		};
+	};
+	F813B26611C825DD00667388 /* SimpleDelayConfig.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {673, 848}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 272}";
+			sepNavWindowFrame = "{{2598, 415}, {732, 999}}";
+		};
+	};
+	F813B26711C825DD00667388 /* SimpleDelayConfig.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {673, 848}}";
+			sepNavSelRange = "{780, 0}";
+			sepNavVisRange = "{0, 791}";
+			sepNavWindowFrame = "{{357, 211}, {732, 999}}";
+		};
+	};
+	F813B26911C825DD00667388 /* SimpleDelayInGame.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {833, 967}}";
+			sepNavSelRange = "{204, 18}";
+			sepNavVisRange = "{0, 329}";
+			sepNavWindowFrame = "{{637, 288}, {892, 1118}}";
+		};
+	};
+	F813B26A11C825DD00667388 /* SimpleDelayInGame.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {833, 967}}";
+			sepNavSelRange = "{628, 14}";
+			sepNavVisRange = "{0, 1022}";
+			sepNavWindowFrame = "{{1008, 74}, {892, 1118}}";
+		};
+	};
+	F835F20611B571DA002C1BE0 /* GameType.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {801, 910}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 372}";
+			sepNavWindowFrame = "{{291, 123}, {860, 1038}}";
+		};
+	};
+	F835F2B611B576C2002C1BE0 /* CountDownConfig.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {804, 842}}";
+			sepNavSelRange = "{198, 17}";
+			sepNavVisRange = "{0, 252}";
+			sepNavWindowFrame = "{{153, 294}, {863, 993}}";
+		};
+	};
+	F835F2B711B576C2002C1BE0 /* CountDownConfig.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1021, 1003}}";
+			sepNavSelRange = "{578, 0}";
+			sepNavVisRange = "{0, 764}";
+			sepNavWindowFrame = "{{2607, 261}, {1080, 1154}}";
+		};
+	};
+	F835F2B911B576C2002C1BE0 /* CountDownInGame.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {839, 1046}}";
+			sepNavSelRange = "{437, 8}";
+			sepNavVisRange = "{0, 569}";
+			sepNavWindowFrame = "{{1115, 235}, {898, 1174}}";
+		};
+	};
+	F835F2BA11B576C2002C1BE0 /* CountDownInGame.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1146, 1612}}";
+			sepNavSelRange = "{1839, 0}";
+			sepNavVisRange = "{1504, 617}";
+			sepNavWindowFrame = "{{1353, 95}, {835, 1116}}";
+		};
+	};
+	F835F2C911B577EF002C1BE0 /* CountUpInGame.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {668, 937}}";
+			sepNavSelRange = "{314, 10}";
+			sepNavVisRange = "{0, 676}";
+			sepNavWindowFrame = "{{1432, 347}, {727, 1065}}";
+		};
+	};
+	F835F2CA11B577EF002C1BE0 /* CountUpInGame.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1146, 1911}}";
+			sepNavSelRange = "{2284, 0}";
+			sepNavVisRange = "{1631, 1283}";
+			sepNavWindowFrame = "{{1684, 127}, {835, 1116}}";
+		};
+	};
+	F835F2CE11B57803002C1BE0 /* CountUpConfig.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {776, 965}}";
+			sepNavSelRange = "{221, 20}";
+			sepNavVisRange = "{0, 277}";
+			sepNavWindowFrame = "{{1498, 278}, {835, 1116}}";
+		};
+	};
+	F835F2CF11B57803002C1BE0 /* CountUpConfig.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1146, 965}}";
+			sepNavSelRange = "{637, 0}";
+			sepNavVisRange = "{0, 1643}";
+			sepNavWindowFrame = "{{757, 274}, {835, 1116}}";
+		};
+	};
+	F835F41B11B597B8002C1BE0 /* AppIcon.png */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{1089, 140}, {892, 1118}}";
+		};
+	};
+	F842B50A11B8510C00606B5A /* HourGlassConfig.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {839, 1023}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 251}";
+			sepNavWindowFrame = "{{84, 244}, {898, 1174}}";
+		};
+	};
+	F842B50B11B8510C00606B5A /* HourGlassConfig.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {839, 1023}}";
+			sepNavSelRange = "{1484, 0}";
+			sepNavVisRange = "{0, 1495}";
+			sepNavWindowFrame = "{{379, 205}, {898, 1174}}";
+		};
+	};
+	F8680C7C11CBBDEE00A61618 /* HelpViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {673, 848}}";
+			sepNavSelRange = "{229, 0}";
+			sepNavVisRange = "{0, 229}";
+			sepNavWindowFrame = "{{2690, 331}, {732, 999}}";
+		};
+	};
+	F8680C7D11CBBDEE00A61618 /* HelpViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1146, 848}}";
+			sepNavSelRange = "{1095, 0}";
+			sepNavVisRange = "{0, 1289}";
+			sepNavWindowFrame = "{{2826, 369}, {732, 999}}";
+		};
+	};
+	F86C6E5011C3EF050040C1D0 /* Board Game Timer */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "Board Game Timer";
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		startupPath = "<<ProjectDirectory>>";
+		variableFormatDictionary = {
+		};
+	};
+	F86C6E6711C3EF0D0040C1D0 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	F86C6E6811C3EF0D0040C1D0 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	F86C6E7E11C3F1900040C1D0 /* BackAndForthInGame.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {932, 871}}";
+			sepNavSelRange = "{1206, 5}";
+			sepNavVisRange = "{817, 572}";
+			sepNavWindowFrame = "{{1042, 262}, {730, 961}}";
+		};
+	};
+	F86C6E7F11C3F1900040C1D0 /* BackAndForthInGame.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1013, 2808}}";
+			sepNavSelRange = "{3519, 23}";
+			sepNavVisRange = "{2683, 1272}";
+			sepNavWindowFrame = "{{1605, 90}, {863, 993}}";
+		};
+	};
+	F86C6EAE11C3F39D0040C1D0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F886210211C3EE1600A390CB /* SuddenDeathInGame.h */;
+		name = "SuddenDeathInGame.h: 11";
+		rLen = 0;
+		rLoc = 173;
+		rType = 0;
+		vrLen = 235;
+		vrLoc = 0;
+	};
+	F876836311C3A3D000B00D3D /* SingleStartConfig.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {932, 520}}";
+			sepNavSelRange = "{550, 12}";
+			sepNavVisRange = "{281, 353}";
+			sepNavWindowFrame = "{{1584, 199}, {727, 1065}}";
+		};
+	};
+	F876836411C3A3D000B00D3D /* SingleStartConfig.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {668, 1586}}";
+			sepNavSelRange = "{1439, 0}";
+			sepNavVisRange = "{1049, 1103}";
+			sepNavWindowFrame = "{{1764, 87}, {727, 1065}}";
+		};
+	};
+	F876839811C3A79C00B00D3D /* SingleStartInGame.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {827, 935}}";
+			sepNavSelRange = "{377, 0}";
+			sepNavVisRange = "{0, 532}";
+			sepNavWindowFrame = "{{953, 313}, {886, 1063}}";
+		};
+	};
+	F876839911C3A79C00B00D3D /* SingleStartInGame.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1256, 832}}";
+			sepNavSelRange = "{745, 0}";
+			sepNavVisRange = "{681, 481}";
+			sepNavWindowFrame = "{{3534, 474}, {856, 863}}";
+		};
+	};
+	F883E29E11CFD41600C958D5 /* AudioHelper.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1005, 768}}";
+			sepNavSelRange = "{7, 11}";
+			sepNavVisRange = "{0, 410}";
+			sepNavWindowFrame = "{{261, 87}, {1080, 1154}}";
+		};
+	};
+	F883E29F11CFD41600C958D5 /* AudioHelper.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {932, 1209}}";
+			sepNavSelRange = "{1118, 3}";
+			sepNavVisRange = "{641, 501}";
+			sepNavWindowFrame = "{{389, 87}, {1080, 1154}}";
+		};
+	};
+	F8861E1811C3C26D00A390CB /* Player.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {668, 937}}";
+			sepNavSelRange = "{619, 9}";
+			sepNavVisRange = "{0, 1299}";
+			sepNavWindowFrame = "{{1037, 291}, {727, 1065}}";
+		};
+	};
+	F8861E1911C3C26D00A390CB /* Player.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {814, 3055}}";
+			sepNavSelRange = "{3085, 0}";
+			sepNavVisRange = "{2298, 1214}";
+			sepNavWindowFrame = "{{910, 188}, {873, 1111}}";
+		};
+	};
+	F88620B111C3EBFD00A390CB /* HourGlassInGame.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {839, 1023}}";
+			sepNavSelRange = "{227, 0}";
+			sepNavVisRange = "{0, 233}";
+			sepNavWindowFrame = "{{730, 244}, {898, 1174}}";
+		};
+	};
+	F88620B211C3EBFD00A390CB /* HourGlassInGame.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {839, 1046}}";
+			sepNavSelRange = "{241, 0}";
+			sepNavVisRange = "{0, 614}";
+			sepNavWindowFrame = "{{1511, 85}, {898, 1174}}";
+		};
+	};
+	F88620FF11C3EE1600A390CB /* SuddenDeathConfig.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {839, 1023}}";
+			sepNavSelRange = "{200, 19}";
+			sepNavVisRange = "{0, 255}";
+			sepNavWindowFrame = "{{1069, 225}, {898, 1174}}";
+		};
+	};
+	F886210011C3EE1600A390CB /* SuddenDeathConfig.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {839, 1023}}";
+			sepNavSelRange = "{791, 0}";
+			sepNavVisRange = "{0, 803}";
+			sepNavWindowFrame = "{{185, 157}, {898, 1174}}";
+		};
+	};
+	F886210211C3EE1600A390CB /* SuddenDeathInGame.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {839, 1046}}";
+			sepNavSelRange = "{204, 18}";
+			sepNavVisRange = "{0, 235}";
+			sepNavWindowFrame = "{{43, 240}, {898, 1174}}";
+		};
+	};
+	F886210311C3EE1600A390CB /* SuddenDeathInGame.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {839, 1023}}";
+			sepNavSelRange = "{225, 0}";
+			sepNavVisRange = "{0, 232}";
+			sepNavWindowFrame = "{{247, 87}, {898, 1174}}";
+		};
+	};
+	F892995D11C6BE5A005F26F9 /* BronsteinConfig.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {804, 865}}";
+			sepNavSelRange = "{765, 0}";
+			sepNavVisRange = "{0, 795}";
+			sepNavWindowFrame = "{{837, 133}, {863, 993}}";
+		};
+	};
+	F892997311C6BF7F005F26F9 /* SingeStartTurnBonusConfig.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {932, 403}}";
+			sepNavSelRange = "{332, 12}";
+			sepNavVisRange = "{49, 466}";
+			sepNavWindowFrame = "{{61, 253}, {892, 1118}}";
+		};
+	};
+	F892997411C6BF7F005F26F9 /* SingeStartTurnBonusConfig.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {833, 1183}}";
+			sepNavSelRange = "{881, 24}";
+			sepNavVisRange = "{281, 1564}";
+			sepNavWindowFrame = "{{1412, 113}, {892, 1118}}";
+		};
+	};
+	F8980C1211C4123A0030604F /* FischerConfig.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {668, 914}}";
+			sepNavSelRange = "{202, 25}";
+			sepNavVisRange = "{0, 263}";
+			sepNavWindowFrame = "{{2575, 370}, {727, 1065}}";
+		};
+	};
+	F8980C1311C4123A0030604F /* FischerConfig.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {668, 914}}";
+			sepNavSelRange = "{703, 0}";
+			sepNavVisRange = "{0, 762}";
+			sepNavWindowFrame = "{{928, 116}, {727, 1065}}";
+		};
+	};
+	F8980C1511C4123A0030604F /* FischerInGame.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {668, 937}}";
+			sepNavSelRange = "{233, 19}";
+			sepNavVisRange = "{0, 321}";
+			sepNavWindowFrame = "{{853, 353}, {727, 1065}}";
+		};
+	};
+	F8980C1611C4123A0030604F /* FischerInGame.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {668, 937}}";
+			sepNavSelRange = "{278, 0}";
+			sepNavVisRange = "{0, 562}";
+			sepNavWindowFrame = "{{1284, 118}, {727, 1065}}";
+		};
+	};
+	F8A6A8721246F06D00610ED1 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 8D1107310486CEB800E47090 /* GameTimer-Info.plist */;
+	};
+	F8A6A8781246F08300610ED1 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* GameTimer-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/mft/branches/BoardGameTimer/1.0/GameTimer-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	F8AA4AA3118A330800F51C19 /* Helper.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {827, 912}}";
+			sepNavSelRange = "{515, 0}";
+			sepNavVisRange = "{0, 515}";
+			sepNavWindowFrame = "{{1240, 334}, {886, 1063}}";
+		};
+	};
+	F8AA4AA4118A330800F51C19 /* Helper.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {978, 1326}}";
+			sepNavSelRange = "{2466, 3}";
+			sepNavVisRange = "{2124, 392}";
+			sepNavWindowFrame = "{{2632, 276}, {886, 1063}}";
+		};
+	};
+	F8C1979811CAB84C007C6CF8 /* JapaneseOvertimeConfig.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {804, 842}}";
+			sepNavSelRange = "{382, 12}";
+			sepNavVisRange = "{0, 773}";
+			sepNavWindowFrame = "{{176, 273}, {863, 993}}";
+		};
+	};
+	F8C1979911CAB84C007C6CF8 /* JapaneseOvertimeConfig.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {804, 2340}}";
+			sepNavSelRange = "{1446, 12}";
+			sepNavVisRange = "{825, 1081}";
+			sepNavWindowFrame = "{{807, 119}, {863, 993}}";
+		};
+	};
+	F8C1979B11CAB84C007C6CF8 /* JapaneseOvertimeInGame.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {776, 988}}";
+			sepNavSelRange = "{214, 18}";
+			sepNavVisRange = "{0, 392}";
+			sepNavWindowFrame = "{{69, 281}, {835, 1116}}";
+		};
+	};
+	F8C1979C11CAB84C007C6CF8 /* JapaneseOvertimeInGame.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {853, 1456}}";
+			sepNavSelRange = "{976, 0}";
+			sepNavVisRange = "{507, 1662}";
+			sepNavWindowFrame = "{{1424, 145}, {912, 1113}}";
+		};
+	};
+	F8D7FAF911C13362009E1B7B /* ConfigViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {776, 988}}";
+			sepNavSelRange = "{337, 0}";
+			sepNavVisRange = "{0, 469}";
+			sepNavWindowFrame = "{{2575, 319}, {835, 1116}}";
+		};
+	};
+	F8D7FAFA11C13362009E1B7B /* ConfigViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1524, 1391}}";
+			sepNavSelRange = "{2743, 3}";
+			sepNavVisRange = "{2443, 444}";
+			sepNavWindowFrame = "{{3019, 268}, {835, 1116}}";
+		};
+	};
+	F8FC128111C96D4900BCD2D3 /* CanadianConfig.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {833, 967}}";
+			sepNavSelRange = "{307, 22}";
+			sepNavVisRange = "{0, 476}";
+			sepNavWindowFrame = "{{1158, 279}, {892, 1118}}";
+		};
+	};
+	F8FC128211C96D4900BCD2D3 /* CanadianConfig.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {932, 1534}}";
+			sepNavSelRange = "{998, 12}";
+			sepNavVisRange = "{790, 441}";
+			sepNavWindowFrame = "{{901, 199}, {892, 1118}}";
+		};
+	};
+	F8FC128411C96D4900BCD2D3 /* CanadianInGame.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {833, 967}}";
+			sepNavSelRange = "{254, 0}";
+			sepNavVisRange = "{0, 310}";
+			sepNavWindowFrame = "{{447, 224}, {892, 1118}}";
+		};
+	};
+	F8FC128511C96D4900BCD2D3 /* CanadianInGame.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {833, 990}}";
+			sepNavSelRange = "{657, 0}";
+			sepNavVisRange = "{0, 1165}";
+			sepNavWindowFrame = "{{539, 196}, {892, 1118}}";
+		};
+	};
+	F8FC13A711C982DA00BCD2D3 /* JapaneseConfig.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {932, 364}}";
+			sepNavSelRange = "{308, 12}";
+			sepNavVisRange = "{0, 468}";
+			sepNavWindowFrame = "{{302, 282}, {892, 1118}}";
+		};
+	};
+	F8FC13A811C982DA00BCD2D3 /* JapaneseConfig.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {932, 1404}}";
+			sepNavSelRange = "{934, 12}";
+			sepNavVisRange = "{729, 429}";
+			sepNavWindowFrame = "{{908, 131}, {892, 1118}}";
+		};
+	};
+	F8FC13AA11C982DA00BCD2D3 /* JapaneseInGame.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {833, 967}}";
+			sepNavSelRange = "{246, 0}";
+			sepNavVisRange = "{0, 293}";
+			sepNavWindowFrame = "{{1028, 273}, {892, 1118}}";
+		};
+	};
+	F8FC13AB11C982DA00BCD2D3 /* JapaneseInGame.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {833, 1157}}";
+			sepNavSelRange = "{592, 0}";
+			sepNavVisRange = "{134, 1488}";
+			sepNavWindowFrame = "{{1314, 107}, {892, 1118}}";
+		};
+	};
+}

@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* GameTimerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* GameTimerAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2804200B108E984D000629CD /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28042008108E984D000629CD /* RootViewController.m */; };
+		2804200C108E984D000629CD /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2804200A108E984D000629CD /* DetailViewController.m */; };
+		2804203C108E9BAB000629CD /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2804203B108E9BAB000629CD /* DetailView.xib */; };
+		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
+		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
+		F80E9AC611D9A30B002C2E91 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = F80E9AC511D9A30B002C2E91 /* Entitlements.plist */; };
+		F80E9B8E11D9AD02002C2E91 /* HelperView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F80E9B8D11D9AD02002C2E91 /* HelperView.xib */; };
+		F813B20911C8228300667388 /* BackAndForthInGame.xib in Resources */ = {isa = PBXBuildFile; fileRef = F813B20811C8228300667388 /* BackAndForthInGame.xib */; };
+		F813B26B11C825DD00667388 /* SimpleDelayConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F813B26711C825DD00667388 /* SimpleDelayConfig.m */; };
+		F813B26C11C825DD00667388 /* SimpleDelayConfig.xib in Resources */ = {isa = PBXBuildFile; fileRef = F813B26811C825DD00667388 /* SimpleDelayConfig.xib */; };
+		F813B26D11C825DD00667388 /* SimpleDelayInGame.m in Sources */ = {isa = PBXBuildFile; fileRef = F813B26A11C825DD00667388 /* SimpleDelayInGame.m */; };
+		F823582B11DA771900A72332 /* WebHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = F823582911DA771900A72332 /* WebHelp.m */; };
+		F823582C11DA771900A72332 /* WebHelp.xib in Resources */ = {isa = PBXBuildFile; fileRef = F823582A11DA771900A72332 /* WebHelp.xib */; };
+		F823585A11DA790800A72332 /* help.html in Resources */ = {isa = PBXBuildFile; fileRef = F823585911DA790800A72332 /* help.html */; };
+		F835F20711B571DA002C1BE0 /* GameType.m in Sources */ = {isa = PBXBuildFile; fileRef = F835F20611B571DA002C1BE0 /* GameType.m */; };
+		F835F2BC11B576C2002C1BE0 /* CountDownConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F835F2B711B576C2002C1BE0 /* CountDownConfig.m */; };
+		F835F2BE11B576C2002C1BE0 /* CountDownInGame.m in Sources */ = {isa = PBXBuildFile; fileRef = F835F2BA11B576C2002C1BE0 /* CountDownInGame.m */; };
+		F835F2BF11B576C2002C1BE0 /* CountDownInGame.xib in Resources */ = {isa = PBXBuildFile; fileRef = F835F2BB11B576C2002C1BE0 /* CountDownInGame.xib */; };
+		F835F2CC11B577EF002C1BE0 /* CountUpInGame.m in Sources */ = {isa = PBXBuildFile; fileRef = F835F2CA11B577EF002C1BE0 /* CountUpInGame.m */; };
+		F835F2D111B57803002C1BE0 /* CountUpConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F835F2CF11B57803002C1BE0 /* CountUpConfig.m */; };
+		F835F2D211B57803002C1BE0 /* CountUpConfig.xib in Resources */ = {isa = PBXBuildFile; fileRef = F835F2D011B57803002C1BE0 /* CountUpConfig.xib */; };
+		F835F41C11B597B8002C1BE0 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F835F41B11B597B8002C1BE0 /* AppIcon.png */; };
+		F836322811D538EA00326B8C /* LogoShadowed.png in Resources */ = {isa = PBXBuildFile; fileRef = F836322711D538EA00326B8C /* LogoShadowed.png */; };
+		F836323B11D54A7100326B8C /* greenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F836323A11D54A7100326B8C /* greenButton.png */; };
+		F836329511D5537500326B8C /* greyButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F836329411D5537500326B8C /* greyButton.png */; };
+		F842B50D11B8510C00606B5A /* HourGlassConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F842B50B11B8510C00606B5A /* HourGlassConfig.m */; };
+		F8549BB611CFF30800EB4870 /* lvl.caf in Resources */ = {isa = PBXBuildFile; fileRef = F8549BB511CFF30800EB4870 /* lvl.caf */; };
+		F8680C7F11CBBDEE00A61618 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8680C7D11CBBDEE00A61618 /* HelpViewController.m */; };
+		F868A00811CD591A003CC776 /* SingleStartConfig.xib in Resources */ = {isa = PBXBuildFile; fileRef = F868A00711CD591A003CC776 /* SingleStartConfig.xib */; };
+		F86C6E8011C3F1900040C1D0 /* BackAndForthInGame.m in Sources */ = {isa = PBXBuildFile; fileRef = F86C6E7F11C3F1900040C1D0 /* BackAndForthInGame.m */; };
+		F876836511C3A3D000B00D3D /* SingleStartConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F876836411C3A3D000B00D3D /* SingleStartConfig.m */; };
+		F876839A11C3A79C00B00D3D /* SingleStartInGame.m in Sources */ = {isa = PBXBuildFile; fileRef = F876839911C3A79C00B00D3D /* SingleStartInGame.m */; };
+		F883E25811CFCA4300C958D5 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = F883E25611CFCA4300C958D5 /* Default-Landscape.png */; };
+		F883E25911CFCA4300C958D5 /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = F883E25711CFCA4300C958D5 /* Default-Portrait.png */; };
+		F883E2A011CFD41600C958D5 /* AudioHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F883E29F11CFD41600C958D5 /* AudioHelper.m */; };
+		F883E2A611CFD47100C958D5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F883E2A511CFD47100C958D5 /* AudioToolbox.framework */; };
+		F8861E1A11C3C26D00A390CB /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = F8861E1911C3C26D00A390CB /* Player.m */; };
+		F88620B411C3EBFD00A390CB /* HourGlassInGame.m in Sources */ = {isa = PBXBuildFile; fileRef = F88620B211C3EBFD00A390CB /* HourGlassInGame.m */; };
+		F886210511C3EE1600A390CB /* SuddenDeathConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F886210011C3EE1600A390CB /* SuddenDeathConfig.m */; };
+		F886210711C3EE1600A390CB /* SuddenDeathInGame.m in Sources */ = {isa = PBXBuildFile; fileRef = F886210311C3EE1600A390CB /* SuddenDeathInGame.m */; };
+		F892996211C6BE5A005F26F9 /* BronsteinConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F892995D11C6BE5A005F26F9 /* BronsteinConfig.m */; };
+		F892996311C6BE5A005F26F9 /* BronsteinConfig.xib in Resources */ = {isa = PBXBuildFile; fileRef = F892995E11C6BE5A005F26F9 /* BronsteinConfig.xib */; };
+		F892996411C6BE5A005F26F9 /* BronsteinInGame.m in Sources */ = {isa = PBXBuildFile; fileRef = F892996011C6BE5A005F26F9 /* BronsteinInGame.m */; };
+		F892997511C6BF7F005F26F9 /* SingeStartTurnBonusConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F892997411C6BF7F005F26F9 /* SingeStartTurnBonusConfig.m */; };
+		F8980C1811C4123A0030604F /* FischerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F8980C1311C4123A0030604F /* FischerConfig.m */; };
+		F8980C1911C4123A0030604F /* FischerConfig.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8980C1411C4123A0030604F /* FischerConfig.xib */; };
+		F8980C1A11C4123A0030604F /* FischerInGame.m in Sources */ = {isa = PBXBuildFile; fileRef = F8980C1611C4123A0030604F /* FischerInGame.m */; };
+		F8AA4AA5118A330800F51C19 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AA4AA4118A330800F51C19 /* Helper.m */; };
+		F8AED33811D3CB8D005E77AF /* AppLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F8AED33711D3CB8D005E77AF /* AppLogo.png */; };
+		F8B4DCBB11D63786009C33FF /* blackBackGround.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B4DCBA11D63786009C33FF /* blackBackGround.png */; };
+		F8B4DDA111D66482009C33FF /* minusButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B4DD9F11D66482009C33FF /* minusButton.png */; };
+		F8B4DDA211D66482009C33FF /* plusButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B4DDA011D66482009C33FF /* plusButton.png */; };
+		F8B4DDC411D6692D009C33FF /* minusSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B4DDC211D6692D009C33FF /* minusSmall.png */; };
+		F8B4DDC511D6692D009C33FF /* plusSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B4DDC311D6692D009C33FF /* plusSmall.png */; };
+		F8C1979D11CAB84C007C6CF8 /* JapaneseOvertimeConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C1979911CAB84C007C6CF8 /* JapaneseOvertimeConfig.m */; };
+		F8C1979E11CAB84C007C6CF8 /* JapaneseOvertimeConfig.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8C1979A11CAB84C007C6CF8 /* JapaneseOvertimeConfig.xib */; };
+		F8C1979F11CAB84C007C6CF8 /* JapaneseOvertimeInGame.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C1979C11CAB84C007C6CF8 /* JapaneseOvertimeInGame.m */; };
+		F8D40E2811D032DB00AB249B /* click1.caf in Resources */ = {isa = PBXBuildFile; fileRef = F8D40E2711D032DB00AB249B /* click1.caf */; };
+		F8D40E3511D0335300AB249B /* click3.caf in Resources */ = {isa = PBXBuildFile; fileRef = F8D40E3311D0335300AB249B /* click3.caf */; };
+		F8D40E3611D0335300AB249B /* timeUp.caf in Resources */ = {isa = PBXBuildFile; fileRef = F8D40E3411D0335300AB249B /* timeUp.caf */; };
+		F8D7FAFB11C13362009E1B7B /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D7FAFA11C13362009E1B7B /* ConfigViewController.m */; };
+		F8FC128611C96D4900BCD2D3 /* CanadianConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC128211C96D4900BCD2D3 /* CanadianConfig.m */; };
+		F8FC128711C96D4900BCD2D3 /* CanadianConfig.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8FC128311C96D4900BCD2D3 /* CanadianConfig.xib */; };
+		F8FC128811C96D4900BCD2D3 /* CanadianInGame.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC128511C96D4900BCD2D3 /* CanadianInGame.m */; };
+		F8FC13AD11C982DA00BCD2D3 /* JapaneseConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC13A811C982DA00BCD2D3 /* JapaneseConfig.m */; };
+		F8FC13AE11C982DA00BCD2D3 /* JapaneseConfig.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8FC13A911C982DA00BCD2D3 /* JapaneseConfig.xib */; };
+		F8FC13AF11C982DA00BCD2D3 /* JapaneseInGame.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC13AB11C982DA00BCD2D3 /* JapaneseInGame.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* GameTimerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTimerAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* GameTimerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameTimerAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* B. G. Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "B. G. Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		28042007108E984D000629CD /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		28042008108E984D000629CD /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		28042009108E984D000629CD /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		2804200A108E984D000629CD /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		2804203B108E9BAB000629CD /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DetailView.xib; path = ../DetailView.xib; sourceTree = "<group>"; };
+		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28A0AAE50D9B0CCF005BE974 /* GameTimer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTimer_Prefix.pch; sourceTree = "<group>"; };
+		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* GameTimer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GameTimer-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		F80E9AC511D9A30B002C2E91 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		F80E9B8D11D9AD02002C2E91 /* HelperView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelperView.xib; sourceTree = SOURCE_ROOT; };
+		F813B20811C8228300667388 /* BackAndForthInGame.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = BackAndForthInGame.xib; path = BaseSets/BackAndForthInGame.xib; sourceTree = "<group>"; };
+		F813B26611C825DD00667388 /* SimpleDelayConfig.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SimpleDelayConfig.h; path = "Classes/Sets/Simple Delay/SimpleDelayConfig.h"; sourceTree = "<group>"; };
+		F813B26711C825DD00667388 /* SimpleDelayConfig.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SimpleDelayConfig.m; path = "Classes/Sets/Simple Delay/SimpleDelayConfig.m"; sourceTree = "<group>"; };
+		F813B26811C825DD00667388 /* SimpleDelayConfig.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SimpleDelayConfig.xib; path = "Classes/Sets/Simple Delay/SimpleDelayConfig.xib"; sourceTree = "<group>"; };
+		F813B26911C825DD00667388 /* SimpleDelayInGame.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SimpleDelayInGame.h; path = "Classes/Sets/Simple Delay/SimpleDelayInGame.h"; sourceTree = "<group>"; };
+		F813B26A11C825DD00667388 /* SimpleDelayInGame.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SimpleDelayInGame.m; path = "Classes/Sets/Simple Delay/SimpleDelayInGame.m"; sourceTree = "<group>"; };
+		F823582811DA771900A72332 /* WebHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebHelp.h; path = AppInformation/WebHelp.h; sourceTree = "<group>"; };
+		F823582911DA771900A72332 /* WebHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebHelp.m; path = AppInformation/WebHelp.m; sourceTree = "<group>"; };
+		F823582A11DA771900A72332 /* WebHelp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WebHelp.xib; path = AppInformation/WebHelp.xib; sourceTree = "<group>"; };
+		F823585911DA790800A72332 /* help.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; path = help.html; sourceTree = "<group>"; };
+		F835F20511B571DA002C1BE0 /* GameType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameType.h; sourceTree = "<group>"; };
+		F835F20611B571DA002C1BE0 /* GameType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameType.m; sourceTree = "<group>"; };
+		F835F2B611B576C2002C1BE0 /* CountDownConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CountDownConfig.h; path = Classes/Sets/CountDown/CountDownConfig.h; sourceTree = "<group>"; };
+		F835F2B711B576C2002C1BE0 /* CountDownConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CountDownConfig.m; path = Classes/Sets/CountDown/CountDownConfig.m; sourceTree = "<group>"; };
+		F835F2B911B576C2002C1BE0 /* CountDownInGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CountDownInGame.h; path = Classes/Sets/CountDown/CountDownInGame.h; sourceTree = "<group>"; };
+		F835F2BA11B576C2002C1BE0 /* CountDownInGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CountDownInGame.m; path = Classes/Sets/CountDown/CountDownInGame.m; sourceTree = "<group>"; };
+		F835F2BB11B576C2002C1BE0 /* CountDownInGame.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CountDownInGame.xib; path = Classes/Sets/CountDown/CountDownInGame.xib; sourceTree = "<group>"; };
+		F835F2C911B577EF002C1BE0 /* CountUpInGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CountUpInGame.h; path = Classes/Sets/CountUp/CountUpInGame.h; sourceTree = "<group>"; };
+		F835F2CA11B577EF002C1BE0 /* CountUpInGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CountUpInGame.m; path = Classes/Sets/CountUp/CountUpInGame.m; sourceTree = "<group>"; };
+		F835F2CE11B57803002C1BE0 /* CountUpConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CountUpConfig.h; path = Classes/Sets/CountUp/CountUpConfig.h; sourceTree = "<group>"; };
+		F835F2CF11B57803002C1BE0 /* CountUpConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CountUpConfig.m; path = Classes/Sets/CountUp/CountUpConfig.m; sourceTree = "<group>"; };
+		F835F2D011B57803002C1BE0 /* CountUpConfig.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CountUpConfig.xib; path = Classes/Sets/CountUp/CountUpConfig.xib; sourceTree = "<group>"; };
+		F835F41B11B597B8002C1BE0 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
+		F836322711D538EA00326B8C /* LogoShadowed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LogoShadowed.png; path = images/LogoShadowed.png; sourceTree = "<group>"; };
+		F836323A11D54A7100326B8C /* greenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = greenButton.png; path = images/greenButton.png; sourceTree = "<group>"; };
+		F836329411D5537500326B8C /* greyButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = greyButton.png; path = images/greyButton.png; sourceTree = "<group>"; };
+		F842B50A11B8510C00606B5A /* HourGlassConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HourGlassConfig.h; path = Classes/Sets/HourGlass/HourGlassConfig.h; sourceTree = "<group>"; };
+		F842B50B11B8510C00606B5A /* HourGlassConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HourGlassConfig.m; path = Classes/Sets/HourGlass/HourGlassConfig.m; sourceTree = "<group>"; };
+		F8549BB511CFF30800EB4870 /* lvl.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = lvl.caf; path = sounds/lvl.caf; sourceTree = "<group>"; };
+		F8680C7C11CBBDEE00A61618 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelpViewController.h; path = AppInformation/HelpViewController.h; sourceTree = "<group>"; };
+		F8680C7D11CBBDEE00A61618 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HelpViewController.m; path = AppInformation/HelpViewController.m; sourceTree = "<group>"; };
+		F8680C7E11CBBDEE00A61618 /* HelpView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HelpView.xib; path = AppInformation/HelpView.xib; sourceTree = "<group>"; };
+		F868A00711CD591A003CC776 /* SingleStartConfig.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SingleStartConfig.xib; path = BaseSets/SingleStartConfig.xib; sourceTree = "<group>"; };
+		F86C6E7E11C3F1900040C1D0 /* BackAndForthInGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackAndForthInGame.h; path = BaseSets/BackAndForthInGame.h; sourceTree = "<group>"; };
+		F86C6E7F11C3F1900040C1D0 /* BackAndForthInGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BackAndForthInGame.m; path = BaseSets/BackAndForthInGame.m; sourceTree = "<group>"; };
+		F876836311C3A3D000B00D3D /* SingleStartConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleStartConfig.h; sourceTree = "<group>"; };
+		F876836411C3A3D000B00D3D /* SingleStartConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleStartConfig.m; sourceTree = "<group>"; };
+		F876839811C3A79C00B00D3D /* SingleStartInGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SingleStartInGame.h; path = BaseSets/SingleStartInGame.h; sourceTree = "<group>"; };
+		F876839911C3A79C00B00D3D /* SingleStartInGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SingleStartInGame.m; path = BaseSets/SingleStartInGame.m; sourceTree = "<group>"; };
+		F883E25611CFCA4300C958D5 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
+		F883E25711CFCA4300C958D5 /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
+		F883E29E11CFD41600C958D5 /* AudioHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioHelper.h; sourceTree = "<group>"; };
+		F883E29F11CFD41600C958D5 /* AudioHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioHelper.m; sourceTree = "<group>"; };
+		F883E2A511CFD47100C958D5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F8861E1811C3C26D00A390CB /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = Player/Player.h; sourceTree = "<group>"; };
+		F8861E1911C3C26D00A390CB /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = Player/Player.m; sourceTree = "<group>"; };
+		F88620B111C3EBFD00A390CB /* HourGlassInGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HourGlassInGame.h; path = Classes/Sets/HourGlass/HourGlassInGame.h; sourceTree = "<group>"; };
+		F88620B211C3EBFD00A390CB /* HourGlassInGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HourGlassInGame.m; path = Classes/Sets/HourGlass/HourGlassInGame.m; sourceTree = "<group>"; };
+		F88620FF11C3EE1600A390CB /* SuddenDeathConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SuddenDeathConfig.h; path = Classes/Sets/SuddenDeathV2/SuddenDeathConfig.h; sourceTree = "<group>"; };
+		F886210011C3EE1600A390CB /* SuddenDeathConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SuddenDeathConfig.m; path = Classes/Sets/SuddenDeathV2/SuddenDeathConfig.m; sourceTree = "<group>"; };
+		F886210211C3EE1600A390CB /* SuddenDeathInGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SuddenDeathInGame.h; path = Classes/Sets/SuddenDeathV2/SuddenDeathInGame.h; sourceTree = "<group>"; };
+		F886210311C3EE1600A390CB /* SuddenDeathInGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SuddenDeathInGame.m; path = Classes/Sets/SuddenDeathV2/SuddenDeathInGame.m; sourceTree = "<group>"; };
+		F892995C11C6BE5A005F26F9 /* BronsteinConfig.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BronsteinConfig.h; path = Classes/Sets/Bronstein/BronsteinConfig.h; sourceTree = "<group>"; };
+		F892995D11C6BE5A005F26F9 /* BronsteinConfig.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = BronsteinConfig.m; path = Classes/Sets/Bronstein/BronsteinConfig.m; sourceTree = "<group>"; };
+		F892995E11C6BE5A005F26F9 /* BronsteinConfig.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = BronsteinConfig.xib; path = Classes/Sets/Bronstein/BronsteinConfig.xib; sourceTree = "<group>"; };
+		F892995F11C6BE5A005F26F9 /* BronsteinInGame.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BronsteinInGame.h; path = Classes/Sets/Bronstein/BronsteinInGame.h; sourceTree = "<group>"; };
+		F892996011C6BE5A005F26F9 /* BronsteinInGame.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = BronsteinInGame.m; path = Classes/Sets/Bronstein/BronsteinInGame.m; sourceTree = "<group>"; };
+		F892997311C6BF7F005F26F9 /* SingeStartTurnBonusConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SingeStartTurnBonusConfig.h; path = BaseSets/SingeStartTurnBonusConfig.h; sourceTree = "<group>"; };
+		F892997411C6BF7F005F26F9 /* SingeStartTurnBonusConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SingeStartTurnBonusConfig.m; path = BaseSets/SingeStartTurnBonusConfig.m; sourceTree = "<group>"; };
+		F8980C1211C4123A0030604F /* FischerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FischerConfig.h; path = Classes/Sets/Fishcer/FischerConfig.h; sourceTree = "<group>"; };
+		F8980C1311C4123A0030604F /* FischerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FischerConfig.m; path = Classes/Sets/Fishcer/FischerConfig.m; sourceTree = "<group>"; };
+		F8980C1411C4123A0030604F /* FischerConfig.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FischerConfig.xib; path = Classes/Sets/Fishcer/FischerConfig.xib; sourceTree = "<group>"; };
+		F8980C1511C4123A0030604F /* FischerInGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FischerInGame.h; path = Classes/Sets/Fishcer/FischerInGame.h; sourceTree = "<group>"; };
+		F8980C1611C4123A0030604F /* FischerInGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FischerInGame.m; path = Classes/Sets/Fishcer/FischerInGame.m; sourceTree = "<group>"; };
+		F8AA4AA3118A330800F51C19 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		F8AA4AA4118A330800F51C19 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
+		F8AED33711D3CB8D005E77AF /* AppLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppLogo.png; sourceTree = "<group>"; };
+		F8B4DCBA11D63786009C33FF /* blackBackGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blackBackGround.png; path = images/blackBackGround.png; sourceTree = "<group>"; };
+		F8B4DD9F11D66482009C33FF /* minusButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = minusButton.png; path = images/minusButton.png; sourceTree = "<group>"; };
+		F8B4DDA011D66482009C33FF /* plusButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plusButton.png; path = images/plusButton.png; sourceTree = "<group>"; };
+		F8B4DDC211D6692D009C33FF /* minusSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = minusSmall.png; path = images/minusSmall.png; sourceTree = "<group>"; };
+		F8B4DDC311D6692D009C33FF /* plusSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plusSmall.png; path = images/plusSmall.png; sourceTree = "<group>"; };
+		F8C1979811CAB84C007C6CF8 /* JapaneseOvertimeConfig.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = JapaneseOvertimeConfig.h; path = Classes/Sets/JapaneseOvertime/JapaneseOvertimeConfig.h; sourceTree = "<group>"; };
+		F8C1979911CAB84C007C6CF8 /* JapaneseOvertimeConfig.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = JapaneseOvertimeConfig.m; path = Classes/Sets/JapaneseOvertime/JapaneseOvertimeConfig.m; sourceTree = "<group>"; };
+		F8C1979A11CAB84C007C6CF8 /* JapaneseOvertimeConfig.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = JapaneseOvertimeConfig.xib; path = Classes/Sets/JapaneseOvertime/JapaneseOvertimeConfig.xib; sourceTree = "<group>"; };
+		F8C1979B11CAB84C007C6CF8 /* JapaneseOvertimeInGame.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = JapaneseOvertimeInGame.h; path = Classes/Sets/JapaneseOvertime/JapaneseOvertimeInGame.h; sourceTree = "<group>"; };
+		F8C1979C11CAB84C007C6CF8 /* JapaneseOvertimeInGame.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = JapaneseOvertimeInGame.m; path = Classes/Sets/JapaneseOvertime/JapaneseOvertimeInGame.m; sourceTree = "<group>"; };
+		F8D40E2711D032DB00AB249B /* click1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = click1.caf; path = sounds/click1.caf; sourceTree = "<group>"; };
+		F8D40E3311D0335300AB249B /* click3.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = click3.caf; path = sounds/click3.caf; sourceTree = "<group>"; };
+		F8D40E3411D0335300AB249B /* timeUp.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = timeUp.caf; path = sounds/timeUp.caf; sourceTree = "<group>"; };
+		F8D7FAF911C13362009E1B7B /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
+		F8D7FAFA11C13362009E1B7B /* ConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigViewController.m; sourceTree = "<group>"; };
+		F8FC128111C96D4900BCD2D3 /* CanadianConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CanadianConfig.h; path = Classes/Sets/Canadian/CanadianConfig.h; sourceTree = "<group>"; };
+		F8FC128211C96D4900BCD2D3 /* CanadianConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CanadianConfig.m; path = Classes/Sets/Canadian/CanadianConfig.m; sourceTree = "<group>"; };
+		F8FC128311C96D4900BCD2D3 /* CanadianConfig.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CanadianConfig.xib; path = Classes/Sets/Canadian/CanadianConfig.xib; sourceTree = "<group>"; };
+		F8FC128411C96D4900BCD2D3 /* CanadianInGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CanadianInGame.h; path = Classes/Sets/Canadian/CanadianInGame.h; sourceTree = "<group>"; };
+		F8FC128511C96D4900BCD2D3 /* CanadianInGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CanadianInGame.m; path = Classes/Sets/Canadian/CanadianInGame.m; sourceTree = "<group>"; };
+		F8FC13A711C982DA00BCD2D3 /* JapaneseConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JapaneseConfig.h; path = Classes/Sets/Japanese/JapaneseConfig.h; sourceTree = "<group>"; };
+		F8FC13A811C982DA00BCD2D3 /* JapaneseConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JapaneseConfig.m; path = Classes/Sets/Japanese/JapaneseConfig.m; sourceTree = "<group>"; };
+		F8FC13A911C982DA00BCD2D3 /* JapaneseConfig.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = JapaneseConfig.xib; path = Classes/Sets/Japanese/JapaneseConfig.xib; sourceTree = "<group>"; };
+		F8FC13AA11C982DA00BCD2D3 /* JapaneseInGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JapaneseInGame.h; path = Classes/Sets/Japanese/JapaneseInGame.h; sourceTree = "<group>"; };
+		F8FC13AB11C982DA00BCD2D3 /* JapaneseInGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JapaneseInGame.m; path = Classes/Sets/Japanese/JapaneseInGame.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
+				F883E2A611CFD47100C958D5 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F8680C7611CBBC7D00A61618 /* AppInformation */,
+				F8861E1711C3C24000A390CB /* Player */,
+				F876836211C3A38000B00D3D /* BaseSets */,
+				F835F20511B571DA002C1BE0 /* GameType.h */,
+				F835F20611B571DA002C1BE0 /* GameType.m */,
+				1D3623240D0F684500981E51 /* GameTimerAppDelegate.h */,
+				1D3623250D0F684500981E51 /* GameTimerAppDelegate.m */,
+				28042007108E984D000629CD /* RootViewController.h */,
+				28042008108E984D000629CD /* RootViewController.m */,
+				F8AA4AA3118A330800F51C19 /* Helper.h */,
+				F8AA4AA4118A330800F51C19 /* Helper.m */,
+				F8D7FAF911C13362009E1B7B /* ConfigViewController.h */,
+				F8D7FAFA11C13362009E1B7B /* ConfigViewController.m */,
+				F883E29E11CFD41600C958D5 /* AudioHelper.h */,
+				F883E29F11CFD41600C958D5 /* AudioHelper.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* B. G. Timer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				F8AA47261189CE2B00F51C19 /* Sets */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				28A0AAE50D9B0CCF005BE974 /* GameTimer_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F823585911DA790800A72332 /* help.html */,
+				F8AED33611D3CB84005E77AF /* Images */,
+				F883E32B11CFD7E100C958D5 /* Sounds */,
+				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* GameTimer-Info.plist */,
+				F80E9AC511D9A30B002C2E91 /* Entitlements.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
+				F883E2A511CFD47100C958D5 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F813B25D11C825CF00667388 /* Simple Delay */ = {
+			isa = PBXGroup;
+			children = (
+				F813B26611C825DD00667388 /* SimpleDelayConfig.h */,
+				F813B26711C825DD00667388 /* SimpleDelayConfig.m */,
+				F813B26811C825DD00667388 /* SimpleDelayConfig.xib */,
+				F813B26911C825DD00667388 /* SimpleDelayInGame.h */,
+				F813B26A11C825DD00667388 /* SimpleDelayInGame.m */,
+			);
+			name = "Simple Delay";
+			sourceTree = "<group>";
+		};
+		F835F2B211B5764C002C1BE0 /* CountUp */ = {
+			isa = PBXGroup;
+			children = (
+				F835F2C911B577EF002C1BE0 /* CountUpInGame.h */,
+				F835F2CA11B577EF002C1BE0 /* CountUpInGame.m */,
+				F835F2CE11B57803002C1BE0 /* CountUpConfig.h */,
+				F835F2CF11B57803002C1BE0 /* CountUpConfig.m */,
+				F835F2D011B57803002C1BE0 /* CountUpConfig.xib */,
+			);
+			name = CountUp;
+			sourceTree = "<group>";
+		};
+		F842B50911B850F000606B5A /* HourGlass */ = {
+			isa = PBXGroup;
+			children = (
+				F88620B111C3EBFD00A390CB /* HourGlassInGame.h */,
+				F88620B211C3EBFD00A390CB /* HourGlassInGame.m */,
+				F842B50A11B8510C00606B5A /* HourGlassConfig.h */,
+				F842B50B11B8510C00606B5A /* HourGlassConfig.m */,
+			);
+			name = HourGlass;
+			sourceTree = "<group>";
+		};
+		F8680C7611CBBC7D00A61618 /* AppInformation */ = {
+			isa = PBXGroup;
+			children = (
+				F80E9B8D11D9AD02002C2E91 /* HelperView.xib */,
+				28042009108E984D000629CD /* DetailViewController.h */,
+				2804200A108E984D000629CD /* DetailViewController.m */,
+				2804203B108E9BAB000629CD /* DetailView.xib */,
+				F8680C7C11CBBDEE00A61618 /* HelpViewController.h */,
+				F8680C7D11CBBDEE00A61618 /* HelpViewController.m */,
+				F8680C7E11CBBDEE00A61618 /* HelpView.xib */,
+				F823582811DA771900A72332 /* WebHelp.h */,
+				F823582911DA771900A72332 /* WebHelp.m */,
+				F823582A11DA771900A72332 /* WebHelp.xib */,
+			);
+			name = AppInformation;
+			sourceTree = "<group>";
+		};
+		F876836211C3A38000B00D3D /* BaseSets */ = {
+			isa = PBXGroup;
+			children = (
+				F868A00711CD591A003CC776 /* SingleStartConfig.xib */,
+				F876836311C3A3D000B00D3D /* SingleStartConfig.h */,
+				F876836411C3A3D000B00D3D /* SingleStartConfig.m */,
+				F876839811C3A79C00B00D3D /* SingleStartInGame.h */,
+				F876839911C3A79C00B00D3D /* SingleStartInGame.m */,
+				F86C6E7E11C3F1900040C1D0 /* BackAndForthInGame.h */,
+				F86C6E7F11C3F1900040C1D0 /* BackAndForthInGame.m */,
+				F813B20811C8228300667388 /* BackAndForthInGame.xib */,
+				F892997311C6BF7F005F26F9 /* SingeStartTurnBonusConfig.h */,
+				F892997411C6BF7F005F26F9 /* SingeStartTurnBonusConfig.m */,
+			);
+			name = BaseSets;
+			sourceTree = "<group>";
+		};
+		F883E32B11CFD7E100C958D5 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				F8D40E3311D0335300AB249B /* click3.caf */,
+				F8D40E3411D0335300AB249B /* timeUp.caf */,
+				F8D40E2711D032DB00AB249B /* click1.caf */,
+				F8549BB511CFF30800EB4870 /* lvl.caf */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		F8861E1711C3C24000A390CB /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				F8861E1811C3C26D00A390CB /* Player.h */,
+				F8861E1911C3C26D00A390CB /* Player.m */,
+			);
+			name = Player;
+			sourceTree = "<group>";
+		};
+		F88620B811C3EC2F00A390CB /* SuddenDeath */ = {
+			isa = PBXGroup;
+			children = (
+				F88620FF11C3EE1600A390CB /* SuddenDeathConfig.h */,
+				F886210011C3EE1600A390CB /* SuddenDeathConfig.m */,
+				F886210211C3EE1600A390CB /* SuddenDeathInGame.h */,
+				F886210311C3EE1600A390CB /* SuddenDeathInGame.m */,
+			);
+			name = SuddenDeath;
+			sourceTree = "<group>";
+		};
+		F892995B11C6BE44005F26F9 /* Bronstein */ = {
+			isa = PBXGroup;
+			children = (
+				F892995C11C6BE5A005F26F9 /* BronsteinConfig.h */,
+				F892995D11C6BE5A005F26F9 /* BronsteinConfig.m */,
+				F892995E11C6BE5A005F26F9 /* BronsteinConfig.xib */,
+				F892995F11C6BE5A005F26F9 /* BronsteinInGame.h */,
+				F892996011C6BE5A005F26F9 /* BronsteinInGame.m */,
+			);
+			name = Bronstein;
+			sourceTree = "<group>";
+		};
+		F8980C1111C412100030604F /* Fischer */ = {
+			isa = PBXGroup;
+			children = (
+				F8980C1211C4123A0030604F /* FischerConfig.h */,
+				F8980C1311C4123A0030604F /* FischerConfig.m */,
+				F8980C1411C4123A0030604F /* FischerConfig.xib */,
+				F8980C1511C4123A0030604F /* FischerInGame.h */,
+				F8980C1611C4123A0030604F /* FischerInGame.m */,
+			);
+			name = Fischer;
+			sourceTree = "<group>";
+		};
+		F8AA47261189CE2B00F51C19 /* Sets */ = {
+			isa = PBXGroup;
+			children = (
+				F8C1979611CAB83E007C6CF8 /* JapaneseOvertime */,
+				F8FC139F11C982CE00BCD2D3 /* Japanese */,
+				F8FC127611C96D3D00BCD2D3 /* Canadian */,
+				F813B25D11C825CF00667388 /* Simple Delay */,
+				F892995B11C6BE44005F26F9 /* Bronstein */,
+				F88620B811C3EC2F00A390CB /* SuddenDeath */,
+				F842B50911B850F000606B5A /* HourGlass */,
+				F8980C1111C412100030604F /* Fischer */,
+				F835F2B211B5764C002C1BE0 /* CountUp */,
+				F8AA47271189CEAC00F51C19 /* CountDown */,
+			);
+			name = Sets;
+			sourceTree = "<group>";
+		};
+		F8AA47271189CEAC00F51C19 /* CountDown */ = {
+			isa = PBXGroup;
+			children = (
+				F835F2B911B576C2002C1BE0 /* CountDownInGame.h */,
+				F835F2BA11B576C2002C1BE0 /* CountDownInGame.m */,
+				F835F2BB11B576C2002C1BE0 /* CountDownInGame.xib */,
+				F835F2B611B576C2002C1BE0 /* CountDownConfig.h */,
+				F835F2B711B576C2002C1BE0 /* CountDownConfig.m */,
+			);
+			name = CountDown;
+			sourceTree = "<group>";
+		};
+		F8AED33611D3CB84005E77AF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F883E25611CFCA4300C958D5 /* Default-Landscape.png */,
+				F883E25711CFCA4300C958D5 /* Default-Portrait.png */,
+				F8B4DDC211D6692D009C33FF /* minusSmall.png */,
+				F8B4DDC311D6692D009C33FF /* plusSmall.png */,
+				F8B4DD9F11D66482009C33FF /* minusButton.png */,
+				F8B4DDA011D66482009C33FF /* plusButton.png */,
+				F8B4DCBA11D63786009C33FF /* blackBackGround.png */,
+				F836329411D5537500326B8C /* greyButton.png */,
+				F836323A11D54A7100326B8C /* greenButton.png */,
+				F836322711D538EA00326B8C /* LogoShadowed.png */,
+				F835F41B11B597B8002C1BE0 /* AppIcon.png */,
+				F8AED33711D3CB8D005E77AF /* AppLogo.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		F8C1979611CAB83E007C6CF8 /* JapaneseOvertime */ = {
+			isa = PBXGroup;
+			children = (
+				F8C1979811CAB84C007C6CF8 /* JapaneseOvertimeConfig.h */,
+				F8C1979911CAB84C007C6CF8 /* JapaneseOvertimeConfig.m */,
+				F8C1979A11CAB84C007C6CF8 /* JapaneseOvertimeConfig.xib */,
+				F8C1979B11CAB84C007C6CF8 /* JapaneseOvertimeInGame.h */,
+				F8C1979C11CAB84C007C6CF8 /* JapaneseOvertimeInGame.m */,
+			);
+			name = JapaneseOvertime;
+			sourceTree = "<group>";
+		};
+		F8FC127611C96D3D00BCD2D3 /* Canadian */ = {
+			isa = PBXGroup;
+			children = (
+				F8FC128111C96D4900BCD2D3 /* CanadianConfig.h */,
+				F8FC128211C96D4900BCD2D3 /* CanadianConfig.m */,
+				F8FC128311C96D4900BCD2D3 /* CanadianConfig.xib */,
+				F8FC128411C96D4900BCD2D3 /* CanadianInGame.h */,
+				F8FC128511C96D4900BCD2D3 /* CanadianInGame.m */,
+			);
+			name = Canadian;
+			sourceTree = "<group>";
+		};
+		F8FC139F11C982CE00BCD2D3 /* Japanese */ = {
+			isa = PBXGroup;
+			children = (
+				F8FC13A711C982DA00BCD2D3 /* JapaneseConfig.h */,
+				F8FC13A811C982DA00BCD2D3 /* JapaneseConfig.m */,
+				F8FC13A911C982DA00BCD2D3 /* JapaneseConfig.xib */,
+				F8FC13AA11C982DA00BCD2D3 /* JapaneseInGame.h */,
+				F8FC13AB11C982DA00BCD2D3 /* JapaneseInGame.m */,
+			);
+			name = Japanese;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Board Game Timer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Board Game Timer" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Board Game Timer";
+			productName = GameTimer;
+			productReference = 1D6058910D05DD3D006BFB54 /* B. G. Timer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GameTimer" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Board Game Timer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
+				2804203C108E9BAB000629CD /* DetailView.xib in Resources */,
+				F835F2BF11B576C2002C1BE0 /* CountDownInGame.xib in Resources */,
+				F835F2D211B57803002C1BE0 /* CountUpConfig.xib in Resources */,
+				F835F41C11B597B8002C1BE0 /* AppIcon.png in Resources */,
+				F8980C1911C4123A0030604F /* FischerConfig.xib in Resources */,
+				F892996311C6BE5A005F26F9 /* BronsteinConfig.xib in Resources */,
+				F813B20911C8228300667388 /* BackAndForthInGame.xib in Resources */,
+				F813B26C11C825DD00667388 /* SimpleDelayConfig.xib in Resources */,
+				F8FC128711C96D4900BCD2D3 /* CanadianConfig.xib in Resources */,
+				F8FC13AE11C982DA00BCD2D3 /* JapaneseConfig.xib in Resources */,
+				F8C1979E11CAB84C007C6CF8 /* JapaneseOvertimeConfig.xib in Resources */,
+				F868A00811CD591A003CC776 /* SingleStartConfig.xib in Resources */,
+				F883E25811CFCA4300C958D5 /* Default-Landscape.png in Resources */,
+				F883E25911CFCA4300C958D5 /* Default-Portrait.png in Resources */,
+				F8549BB611CFF30800EB4870 /* lvl.caf in Resources */,
+				F8D40E2811D032DB00AB249B /* click1.caf in Resources */,
+				F8D40E3511D0335300AB249B /* click3.caf in Resources */,
+				F8D40E3611D0335300AB249B /* timeUp.caf in Resources */,
+				F8AED33811D3CB8D005E77AF /* AppLogo.png in Resources */,
+				F836322811D538EA00326B8C /* LogoShadowed.png in Resources */,
+				F836323B11D54A7100326B8C /* greenButton.png in Resources */,
+				F836329511D5537500326B8C /* greyButton.png in Resources */,
+				F8B4DCBB11D63786009C33FF /* blackBackGround.png in Resources */,
+				F8B4DDA111D66482009C33FF /* minusButton.png in Resources */,
+				F8B4DDA211D66482009C33FF /* plusButton.png in Resources */,
+				F8B4DDC411D6692D009C33FF /* minusSmall.png in Resources */,
+				F8B4DDC511D6692D009C33FF /* plusSmall.png in Resources */,
+				F80E9AC611D9A30B002C2E91 /* Entitlements.plist in Resources */,
+				F80E9B8E11D9AD02002C2E91 /* HelperView.xib in Resources */,
+				F823582C11DA771900A72332 /* WebHelp.xib in Resources */,
+				F823585A11DA790800A72332 /* help.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* GameTimerAppDelegate.m in Sources */,
+				2804200B108E984D000629CD /* RootViewController.m in Sources */,
+				2804200C108E984D000629CD /* DetailViewController.m in Sources */,
+				F8AA4AA5118A330800F51C19 /* Helper.m in Sources */,
+				F835F20711B571DA002C1BE0 /* GameType.m in Sources */,
+				F835F2BC11B576C2002C1BE0 /* CountDownConfig.m in Sources */,
+				F835F2BE11B576C2002C1BE0 /* CountDownInGame.m in Sources */,
+				F835F2CC11B577EF002C1BE0 /* CountUpInGame.m in Sources */,
+				F835F2D111B57803002C1BE0 /* CountUpConfig.m in Sources */,
+				F842B50D11B8510C00606B5A /* HourGlassConfig.m in Sources */,
+				F8D7FAFB11C13362009E1B7B /* ConfigViewController.m in Sources */,
+				F876836511C3A3D000B00D3D /* SingleStartConfig.m in Sources */,
+				F876839A11C3A79C00B00D3D /* SingleStartInGame.m in Sources */,
+				F8861E1A11C3C26D00A390CB /* Player.m in Sources */,
+				F88620B411C3EBFD00A390CB /* HourGlassInGame.m in Sources */,
+				F886210511C3EE1600A390CB /* SuddenDeathConfig.m in Sources */,
+				F886210711C3EE1600A390CB /* SuddenDeathInGame.m in Sources */,
+				F86C6E8011C3F1900040C1D0 /* BackAndForthInGame.m in Sources */,
+				F8980C1811C4123A0030604F /* FischerConfig.m in Sources */,
+				F8980C1A11C4123A0030604F /* FischerInGame.m in Sources */,
+				F892996211C6BE5A005F26F9 /* BronsteinConfig.m in Sources */,
+				F892996411C6BE5A005F26F9 /* BronsteinInGame.m in Sources */,
+				F892997511C6BF7F005F26F9 /* SingeStartTurnBonusConfig.m in Sources */,
+				F813B26B11C825DD00667388 /* SimpleDelayConfig.m in Sources */,
+				F813B26D11C825DD00667388 /* SimpleDelayInGame.m in Sources */,
+				F8FC128611C96D4900BCD2D3 /* CanadianConfig.m in Sources */,
+				F8FC128811C96D4900BCD2D3 /* CanadianInGame.m in Sources */,
+				F8FC13AD11C982DA00BCD2D3 /* JapaneseConfig.m in Sources */,
+				F8FC13AF11C982DA00BCD2D3 /* JapaneseInGame.m in Sources */,
+				F8C1979D11CAB84C007C6CF8 /* JapaneseOvertimeConfig.m in Sources */,
+				F8C1979F11CAB84C007C6CF8 /* JapaneseOvertimeInGame.m in Sources */,
+				F8680C7F11CBBDEE00A61618 /* HelpViewController.m in Sources */,
+				F883E2A011CFD41600C958D5 /* AudioHelper.m in Sources */,
+				F823582B11DA771900A72332 /* WebHelp.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mark Barber (A7X2LCH9ZA)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GameTimer_Prefix.pch;
+				INFOPLIST_FILE = "GameTimer-Info.plist";
+				PRODUCT_NAME = "B. G. Timer";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "35AEACCF-AA62-457B-92ED-559176CB6C33";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mark Barber";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GameTimer_Prefix.pch;
+				INFOPLIST_FILE = "GameTimer-Info.plist";
+				PRODUCT_NAME = "B. G. Timer";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3855E76E-878E-4316-92BD-C4C52770758F";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"ARCHS[sdk=iphoneos*]" = armv7;
+				"ARCHS[sdk=iphonesimulator*]" = i386;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.2;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"ARCHS[sdk=iphoneos*]" = armv7;
+				"ARCHS[sdk=iphonesimulator*]" = i386;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.2;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		F80E9AFB11D9A70E002C2E91 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"ARCHS[sdk=iphoneos*]" = armv7;
+				"ARCHS[sdk=iphonesimulator*]" = i386;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.2;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Distribution;
+		};
+		F80E9AFC11D9A70E002C2E91 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mark Barber";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GameTimer_Prefix.pch;
+				INFOPLIST_FILE = "GameTimer-Info.plist";
+				PRODUCT_NAME = "B. G. Timer";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3855E76E-878E-4316-92BD-C4C52770758F";
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Board Game Timer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				F80E9AFC11D9A70E002C2E91 /* Distribution */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GameTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				F80E9AFB11D9A70E002C2E91 /* Distribution */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

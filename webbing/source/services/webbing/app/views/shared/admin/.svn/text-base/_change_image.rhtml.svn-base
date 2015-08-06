@@ -1,0 +1,7 @@
+<p><label for="image_id">Image ID</label><br/>
+<%=collection_select(change_image, :image_id, @images, :id, :id, {:include_blank => 'None'}) %></p>
+
+<a href="/admin/image/thumbnail_id_list" target="_blank">List Of Images and ID's</a>
+
+<!-- <p><label for="image_id">Image ID</label><br/>
+<%= text_field change_image, 'image_id'  %></p> -->

@@ -1,0 +1,30 @@
+<h1>Welcome to <%= @customer_props[:company_name] %></h1>
+<div id="services-list"> 
+	<% for service_entry in @service_entries %>
+		<div class="service-item">	
+				
+		    <div class="title">
+
+				<%if service_entry.image_id%>
+					<td>		
+						<a href="/services/service/<%=service_entry.id%>">
+							<img class="v_align" src="<%= url_for :controller => "/services", :action => 'thumb', :id => service_entry.image_id %>" alt="/services/service/<%=service_entry.id%>" />
+						</a>						
+					</td>									
+				<%end%>	
+
+				<A href="/services/service/<%=service_entry.id%>"><%=h service_entry.title %></A>
+			</div>
+			
+		    <div class="desc">
+				<%=textilize_links(service_entry.description) %>
+			</div>
+			<br>
+		</div>	
+	<% end %>
+</div>
+
+<%= link_to 'Previous page', { :page => @service_entry_pages.current.previous } if @service_entry_pages.current.previous %>
+<%= link_to 'Next page', { :page => @service_entry_pages.current.next } if @service_entry_pages.current.next %> 
+
+<br />

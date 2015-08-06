@@ -1,0 +1,110 @@
+<!-- Color Picker -->
+	<!-- YUI Dependencies -->  
+	<script type="text/javascript" src="http://yui.yahooapis.com/2.5.1/build/utilities/utilities.js" ></script> 
+	<script type="text/javascript" src="http://yui.yahooapis.com/2.5.1/build/slider/slider-min.js" ></script> 
+
+	<!-- Color Picker source files for CSS and JavaScript --> 
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.5.1/build/colorpicker/assets/skins/sam/colorpicker.css"> 
+	<script type="text/javascript" src="http://yui.yahooapis.com/2.5.1/build/colorpicker/colorpicker-min.js" ></script>
+
+	<script type="text/javascript" src="/ddcolorpicker/windowfiles/dhtmlwindow.js"></script>
+	<link rel="stylesheet" type="text/css" href="/ddcolorpicker/windowfiles/dhtmlwindow.css" />
+
+	<script type="text/javascript" src="/ddcolorpicker/ddcolorpicker.js">
+
+	/***********************************************
+	* Color PIcker Widget (YUI Based)- By Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+	* Requires: YUI Color Picker and DHTML Window Widget
+	***********************************************/
+
+	</script>
+
+
+	<style type="text/css">
+
+	* html .yui-picker-bg{ /*Requires CSS. Do not edit/ remove*/
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://yui.yahooapis.com/2.5.1/build/colorpicker/assets/skins/sam/picker_mask.png',sizingMethod='scale');
+	}
+
+	/*Style used in demos below. Edit if desired*/
+
+	.colorpreview{ /*CSS for sample Preview Control*/
+	border: 1px solid black;
+	padding: 1px 10px;
+	cursor: hand;
+	cursor: pointer;
+	}
+
+	form div{
+	margin-bottom: 5px;
+	}
+
+	</style>
+
+<h1>Coloring</h1>
+<% none = '<br/>&lt;none&gt;' %>
+
+<div class="inline-helper">
+	<a>Click on a color box, <br/> for assisted selection.</a>
+	<br/>
+	<div class="coloring-image">
+		<%=image_tag("/images/help/coloring.png")%>
+	</div>
+</div>
+
+<div class="inline-body">
+	<% form_tag({:action => 'update_coloring'}, {:multipart => true}) do %>
+			
+		<h3>Top Frame:</h3>
+		<div class="section-colors">	
+		  <p>Text Color<br/><%= text_field_tag(:frame1_txt_clr, @customer_props[:frame1_txt_clr], :size => 20, :id=>"field3") %> <span id="control3" class="colorpreview">&nbsp;</span></p>
+		  <p>Background Color<br/><%= text_field_tag(:frame1_clr, @customer_props[:frame1_clr], :size => 20, :id=>"field2") %> <span id="control2" class="colorpreview">&nbsp;</span></p>		
+		</div>
+
+		<h3>Side Bar:</h3>
+		<div class="section-colors">
+		  <p>Text Color<br/><%= text_field_tag(:frame2_txt_clr, @customer_props[:frame2_txt_clr], :size => 20, :id=>"field5") %> <span id="control5" class="colorpreview">&nbsp;</span></p>
+		  <p>Background Color<br/><%= text_field_tag(:frame2_clr, @customer_props[:frame2_clr], :size => 20, :id=>"field4") %> <span id="control4" class="colorpreview">&nbsp;</span></p>		
+		</div>
+
+		<h3>Main Frame:</h3>
+		<div class="section-colors">
+		  <p>Main Header Color<br/><%= text_field_tag(:H1_clr, @customer_props[:H1_clr], :size => 20, :id=>"field8") %> <span id="control8" class="colorpreview">&nbsp;</span></p>
+		  <p>Dot Separator Color<br/><%= text_field_tag(:dot_clr, @customer_props[:dot_clr], :size => 20, :id=>"field11") %> <span id="control11" class="colorpreview">&nbsp;</span></p>	
+		  <p>Second Header Color<br/><%= text_field_tag(:H2_clr, @customer_props[:H2_clr], :size => 20, :id=>"field9") %> <span id="control9" class="colorpreview">&nbsp;</span></p>
+		  <p>Text Color<br/><%= text_field_tag(:frame3_txt_clr, @customer_props[:frame3_txt_clr], :size => 20, :id=>"field7") %> <span id="control7" class="colorpreview">&nbsp;</span></p>		
+		  <p>Minor Header Color<br/><%= text_field_tag(:H3_clr, @customer_props[:H3_clr], :size => 20, :id=>"field10") %> <span id="control10" class="colorpreview">&nbsp;</span></p>
+		  <p>Background Color<br/><%= text_field_tag(:frame3_clr, @customer_props[:frame3_clr], :size => 20, :id=>"field6") %> <span id="control6" class="colorpreview">&nbsp;</span></p>	
+
+		</div>
+		
+		<h3>Other:</h3>
+		<div class="section-colors">
+		  <p>Browser Background Color<br/><%= text_field_tag(:background_clr, @customer_props[:background_clr], :size => 20, :id=>"field1") %> <span id="control1" class="colorpreview">&nbsp;</span></p>
+		</div>	
+  
+	  <%= submit_tag "Update" %>
+	<% end %>
+</div>
+<br/>
+
+
+<!--HTML for Color Picker. Should contain two unique IDs-->
+
+<div id="ddcolorwidget">
+Please choose a color:
+<div id="ddcolorpicker" style="position:relative; height:205px"></div>
+<!-- <a href="http://www.dynamicdrive.com/dynamicindex11/ddcolorpicker/" style="margin-left:5px; font-size:90%">YUI Color Picker Widget</a> -->
+</div>
+
+
+<script type="text/javascript">
+
+ddcolorpicker.init({
+	colorcontainer: ['ddcolorwidget', 'ddcolorpicker'], //id of widget DIV, id of inner color picker DIV
+	displaymode: 'float', //'float' or 'inline'
+	floatattributes: ['DD Color Picker Widget', 'width=390px,height=250px,resize=1,scrolling=1,center=1'], //'float' window attributes
+	fields: ['field1:control1', 'field2:control2', 'field3:control3', 'field4:control4', 'field5:control5', 'field6:control6', 'field7:control7', 'field8:control8', 'field9:control9', 'field10:control10', 'field11:control11'] //[fieldAid[:optionalcontrolAid], fieldBid[:optionalcontrolBid], etc]
+})
+
+</script>

@@ -1,0 +1,2 @@
+<h1>New recommendation / Link</h1>
+<%= render(:partial => "shared/admin/new_w_image", :object =>'admin/recommendation/form') %>

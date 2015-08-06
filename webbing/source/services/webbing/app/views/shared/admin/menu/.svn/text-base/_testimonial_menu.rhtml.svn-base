@@ -1,0 +1,6 @@
+<%=
+render_admin_menu("Testimonials", [
+	link_to("List Testimonials", :controller => 'testimonial', :action => 'list'),
+	link_to("Add Testimonials",   :controller => 'testimonial', :action => 'new'),
+	])
+%>

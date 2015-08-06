@@ -1,0 +1,1 @@
+<img class="v_align" src="<%= url_for :only_path => false, :controller => "/services", :action => 'image', :id => show %>" alt="<%= desc if desc %>" />

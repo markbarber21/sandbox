@@ -1,0 +1,36 @@
+<div id="contact-list">
+	<% for contact in @contact %>
+	
+		<%if contact.image_id%>
+			<div class="contact-image">
+				<%= render(:partial => "shared/image/thumb", :object =>contact.image_id, :locals => {:desc => contact.name}) %> 
+			</div>	
+		<%end%>			
+	
+		<div class="contact-name"><%=contact.name%></div>
+		<div class="contact-sub"><%=contact.description%></div>
+
+		<div class="contact-entry">
+
+			<%="Phone: " + contact.phone + "<br/>" if contact.phone.length != 0%>
+			<%="Cell: " + contact.cell + "<br/>" if contact.cell.length != 0%>
+			<%="Office: " + contact.office_phone + "<br/>" if contact.office_phone.length != 0%>
+			<%="Fax: " + contact.fax + "<br/>" if contact.fax.length != 0%>
+			<%="Email: " + contact.email + "<br/>" if contact.email.length != 0%>		
+
+			<br/>
+			Address:<br/>
+			<%=contact.adr_line1 + "<br/>" if contact.adr_line1.length != 0%>
+			<%=contact.adr_line2 + "<br/>" if contact.adr_line2.length != 0%>
+			<%=contact.city + "<br/>" if contact.city.length != 0%>
+			<%=contact.state + "<br/>" if contact.state.length != 0%>
+			<%=contact.postal_code + "<br/>" if contact.postal_code.length != 0%>
+		</div>
+		<hr>
+	<% end %>
+<div>
+
+<%= link_to 'Previous', {:page => @contact_pages.current.next} if @contact_pages.current.next %> 
+<%= link_to 'Next', { :page => @contact_pages.current.previous } if @contact_pages.current.previous %>
+
+<br />

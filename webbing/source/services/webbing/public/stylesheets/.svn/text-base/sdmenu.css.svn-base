@@ -1,0 +1,50 @@
+/* @override http://localhost:3000/stylesheets/sdmenu.css */
+
+div.sdmenu {
+	width: 150px;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	background: transparent url(/images/sdmenu/bottom.gif) no-repeat right bottom;
+	color: #5d7eab;
+	padding-left: 8px;
+	padding-bottom: 10px;
+}
+div.sdmenu div {
+	background: transparent url(/images/sdmenu/title.gif) repeat-x;
+	overflow: hidden;
+	color: #5d7eab;
+}
+div.sdmenu div:first-child {
+	background: transparent url(/images/sdmenu/toptitle.gif) no-repeat;
+}
+div.sdmenu div.collapsed {
+	height: 25px;
+}
+div.sdmenu div span {
+	display: block;
+	padding: 5px 25px;
+	font-weight: bold;
+	color: white;
+	background: transparent url(/images/sdmenu/expanded.gif) no-repeat 10px center;
+	cursor: default;
+	border-bottom: 1px solid #ddd;
+}
+div.sdmenu div.collapsed span {
+	background-image: url(/images/sdmenu/collapsed.gif);
+	background-color: transparent;
+}
+div.sdmenu div a {
+	padding: 5px 10px;
+	background: #5d7eab;
+	display: block;
+	/*border-bottom: 1px solid #ddd;*/
+	color: #066;
+}
+div.sdmenu div a.current {
+	background : #5d7eab;
+}
+div.sdmenu div a:hover {
+	background : #739fd8 url(/images/sdmenu/linkarrow.gif) no-repeat right center;
+	color: #fff;
+	text-decoration: none;
+}

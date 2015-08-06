@@ -1,0 +1,6 @@
+<%=
+render_admin_menu("Recommendations", [
+  link_to("Recommendation Entries", :controller => 'recommendation', :action => 'list'),
+  link_to("Add Recommendation",   :controller => 'recommendation', :action => 'new'),
+  ])
+%>

@@ -1,0 +1,13 @@
+<div id="gallery_list">
+	<div id="gallery_thumb">
+		<%if service_as_list.image_id%>
+				<%= render(:partial => "shared/image/thumb", :object =>service_as_list.image_id, :locals => {:desc => service_as_list.description}) %>
+		<%end%>
+		<div id="gallery_label">
+			<%=h service_as_list.title %>
+		</div>
+	</div>
+	<div id="gallery_desc">
+		<%=textilize_links(service_as_list.description) %>
+	</div>
+</div>

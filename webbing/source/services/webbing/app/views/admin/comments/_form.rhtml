@@ -1,0 +1,16 @@
+<%= error_messages_for 'comments' %>
+
+<!--[form:comments]-->
+<p><label for="comments_body">Body</label><br/>
+<%= text_area 'comments', 'body'  %></p>
+
+<p><label for="comments_who">Who</label><br/>
+<%= text_field 'comments', 'who'  %></p>
+
+<p><label for="comments_when_created">When created</label><br/>
+<%= date_select 'comments', 'when_created'  %></p>
+
+<p><label for="comments_accepted">Accepted</label><br/>
+<%= text_field 'comments', 'accepted'  %></p>
+<!--[eoform:comments]-->
+

@@ -1,0 +1,21 @@
+<div id="news-list">
+	<% for news in @news %>
+		
+		<div class="news-post">
+			<a class="news-title" href="<%= url_for :only_path => false, :controller => 'services', :action => 'read_news', :id => news.id%>" >
+				<%=news.title%>
+			</a>
+
+			<br/>
+			<br/>
+
+			<div class="news-who">Posted by: <%=news.who%></div>
+			<div class="news-posted">Posted: <%=news.when_created%></div>
+		</div>
+		
+	<% end %>
+<div>
+
+
+
+

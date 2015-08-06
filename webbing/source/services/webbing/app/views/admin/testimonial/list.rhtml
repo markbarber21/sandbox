@@ -1,0 +1,29 @@
+<h1>Listing testimonial_entries</h1>
+
+<div id="admin-list">
+	<table cellpadding="5" cellspacing="0">
+		<tr>
+		<% for column in TestimonialEntry.content_columns %>
+		  <th><%= column.human_name %></th>
+		<% end %>
+		</tr>
+  
+		<% for testimonial_entry in @testimonial_entries %>
+		  <tr valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
+		  <% for column in TestimonialEntry.content_columns %>
+		    <td><%=h testimonial_entry.send(column.name) %></td>
+		  <% end %>
+		    <td><%= link_to 'Show', :action => 'show', :id => testimonial_entry %></td>
+		    <td><%= link_to 'Edit', :action => 'edit', :id => testimonial_entry %></td>
+		    <td><%= link_to 'Destroy', { :action => 'destroy', :id => testimonial_entry }, :confirm => 'Are you sure?', :method => :post %></td>
+		  </tr>
+		<% end %>
+	</table>
+</div>
+
+<%= link_to 'Previous page', { :page => @testimonial_entry_pages.current.previous } if @testimonial_entry_pages.current.previous %>
+<%= link_to 'Next page', { :page => @testimonial_entry_pages.current.next } if @testimonial_entry_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New testimonial_entry', :action => 'new' %>

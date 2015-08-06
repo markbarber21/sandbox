@@ -1,0 +1,7 @@
+<div id="all_srv_links">
+  <%if @service_entries%>
+    <% for service_entry in @service_entries %>
+      <%= link_to service_entry.title,  {:action => 'service', :id => service_entry}, :class => 'service_link' %>
+    <% end %>
+  <%end%>
+</div>

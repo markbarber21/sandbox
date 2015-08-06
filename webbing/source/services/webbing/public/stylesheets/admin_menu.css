@@ -1,0 +1,49 @@
+#admin_menu {
+width: 170px;
+}
+
+#admin_menu .admin_menu_header {
+font: bold 14px Arial;
+color: white;
+background: black url(/images/admin_menu.png) repeat-x center left;
+margin: 0;
+/*margin-bottom: 10px;*/
+/*text-transform: uppercase;*/
+padding: 4px 10px 4px 10px;
+cursor: pointer;
+}
+
+#admin_menu .admin_menu_header_open {
+background-image: url(/images/admin_menu_active.png);
+}
+
+#admin_menu ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+margin-bottom: 8px; 
+}
+
+#admin_menu ul li {
+padding-bottom: 2px;
+}
+
+#admin_menu ul li a {
+color: white;
+display: block;
+padding: 2px 0;
+padding-left: 19px;
+text-decoration: none;
+font-weight: bold;
+border-bottom: 1px solid #dadada;
+font-size: 90%;
+}
+
+#admin_menu ul li a:visited {
+color: white;
+}
+
+#admin_menu ul li a:hover {
+background : #5d7eab url(/images/sdmenu/linkarrow.gif) no-repeat right center;
+}
+

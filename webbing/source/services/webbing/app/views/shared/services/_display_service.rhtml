@@ -1,0 +1,28 @@
+<div class="service-item">
+	<!-- Render Service Category -->
+    <div class="title">
+		<%if display_service.image_id%>
+			<%#= render(:partial => "shared/image/thumb", :object =>display_service.image_id, :locals => {:desc => display_service.description}) %>
+		<%end%>	
+
+		<h1><%=h display_service.title %></h1>
+	</div>
+	
+    <div class="desc">
+		<b><%=textilize_links(display_service.description) %></b>
+	</div>
+	
+	<!-- Render Entries in each Category -->
+    <%@portfolio_entries = PortfolioEntry.find(:all, :conditions => "service_entry_id='#{display_service.id}'", :order => "sort_order DESC, title")%>	
+	<div id="gallery_block">
+		<%for portfolio_entry in @portfolio_entries%>
+			<%if display_service.disp_type == 1 %>
+				<%= render(:partial => "shared/services/service_as_list", :object => portfolio_entry) %>	
+				<hr>
+			<%else%>
+				<%= render(:partial => "shared/services/service_as_thumb", :object => portfolio_entry) %>	
+			<%end%>
+		<%end%>		
+	</div>
+	
+</div>

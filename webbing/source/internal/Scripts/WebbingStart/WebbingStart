@@ -1,0 +1,28 @@
+#!/bin/sh
+# http://www.macdevcenter.com/pub/a/mac/2003/10/21/startup.html
+# 
+
+. /etc/rc.common
+
+StartService() 
+{
+	ConsoleMessage "Starting webbing Services"
+	rm /Users/mbarber/Desktop/MyTrunk/railsTrunk/source/services/webbing/pid
+	/usr/local/bin/mongrel_rails start  -e production --chdir /rt/source/services/webbing/ -p 4021 --daemonize -P /rt/source/services/webbing/pid
+}
+
+
+StopService() 
+{
+	ConsoleMessage "Stopping webbing Services"
+}
+
+RestartService() 
+{
+	ConsoleMessage "Restarting webbing Services"	
+    StopService
+    StartService
+}
+
+RunService "$1"
+

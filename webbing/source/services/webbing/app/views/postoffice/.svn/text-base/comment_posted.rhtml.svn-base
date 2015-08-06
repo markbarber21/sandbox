@@ -1,0 +1,9 @@
+<p>Comment posted by: <b><%= @name %></b></p>
+ 
+<p>Comment:</p>
+<p><b><%= @email %></b></p>
+
+
+<p>IP:</p>
+<p><b><%= @ip %></b></p>
+

@@ -1,0 +1,7 @@
+<%=
+render_admin_menu("User Options", [
+  link_to("List users", :controller => 'login', :action => 'list_users'),
+  link_to("Add user",   :controller => 'login', :action => 'add_user'),
+  link_to("Logout",     :controller => 'login', :action => 'logout'),
+  ])
+%>

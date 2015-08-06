@@ -1,0 +1,19 @@
+<!--
+//TODO:
+  * add image, redirect to add another
+-->
+
+<h1>New image</h1>
+
+<% form_for(:image, :url => {:action => 'create'}, :html => { :multipart => true }) do |form| %>
+
+<p><label for="image_large">Large</label><br/>
+<%= form.file_field 'uploaded_picture' %></p>
+
+<p><label for="image_caption">Caption</label><br/>
+<%= form.text_field 'caption' %></p>
+
+<%= submit_tag "Create" %>
+<% end %>
+
+<%= link_to 'Back', :action => 'list' %>

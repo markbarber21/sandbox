@@ -1,0 +1,37 @@
+<h1>Listing news</h1>
+<div id="admin-list">
+	<table cellpadding="5" cellspacing="0">
+	  <tr>
+	  <% for column in News.content_columns %>
+	    <th><%= column.human_name %></th>
+	  <% end %>
+	  </tr>
+  
+	<% for news in @news %>
+	  <tr valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
+		  <% for column in News.content_columns %>
+			<%if column.name != "when_created"%>
+		    <td><%=h(news.send(column.name)) %></td>
+			<%end%>			
+		  <% end %>
+		
+			<td>
+				<%if news.image_id%>
+					<%= render(:partial => "shared/image/thumb", :object =>news.image_id, :locals => {:desc => news.title}) %> 
+				<%end%>
+			</td>		
+		
+		    <td><%= link_to 'Show', :action => 'show', :id => news %></td>
+		    <td><%= link_to 'Edit', :action => 'edit', :id => news %></td>
+		    <td><%= link_to 'Destroy', { :action => 'destroy', :id => news }, :confirm => 'Are you sure?', :method => :post %></td>
+	  </tr>
+	<% end %>
+	</table>
+</div>
+
+<%= link_to 'Previous page', { :page => @news_pages.current.previous } if @news_pages.current.previous %>
+<%= link_to 'Next page', { :page => @news_pages.current.next } if @news_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New news', :action => 'new' %>

@@ -1,0 +1,7 @@
+<%@disclosures = Disclosures.find(:all)%>
+<div class="disclose">
+	<%for disclosures in @disclosures%>
+		<%=disclosures.description%>
+		<br />
+	<%end%>
+</div>

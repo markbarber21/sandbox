@@ -1,0 +1,54 @@
+<!--
+//TODO:
+List Service view
+ - show how many Entries are in service.
+ - Add new entry button on each service.
+ - edit/list entries per service
+-->
+
+<h1>Listing service_entries</h1>
+
+<div id="admin-list">
+	<table cellpadding="5" cellspacing="0">
+	  <tr>
+	  <% for column in ServiceEntry.content_columns %>
+	    <th><%= column.human_name %></th>
+	  <% end %>
+	  </tr>
+  
+	<% for service_entry in @service_entries %>
+	  <tr valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
+	  <% for column in ServiceEntry.content_columns %>
+		<%if column.name == "disp_type"%>
+				
+	   		<%if (service_entry.disp_type == 1)%>
+	      		<td>List View</td>
+	    	<%else%>
+	      		<td>Thumbnail View</td>
+	    	<%end%>		
+		
+		<%else%>
+	    	<td><%=h service_entry.send(column.name) %></td>
+		<%end%>
+	  <% end %>
+	
+		<td>
+		<%if service_entry.image_id%>
+			<%= render(:partial => "shared/image/thumb", :object =>service_entry.image_id, :locals => {:desc => service_entry.description}) %> 
+		<%end%>
+		</td>
+				    
+		<td><%= link_to 'Show', :action => 'show', :id => service_entry %></td>
+	    <td><%= link_to 'Edit', :action => 'edit', :id => service_entry %></td>
+	    <td><%= link_to 'Destroy', { :action => 'destroy', :id => service_entry }, :confirm => 'Are you sure?', :method => :post %></td>
+	  </tr>
+	<% end %>
+	</table>
+</div>
+
+<%= link_to 'Previous page', { :page => @service_entry_pages.current.previous } if @service_entry_pages.current.previous %>
+<%= link_to 'Next page', { :page => @service_entry_pages.current.next } if @service_entry_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New service_entry', :action => 'new' %>

@@ -1,0 +1,35 @@
+<h1>Listing images</h1>
+
+<table>
+  <tr>
+	<th>Image ID</th>
+  <% for column in Image.content_columns %>
+    <% next if column.name == 'large' %>
+    <th><%= column.human_name %></th>
+  <% end %>
+  </tr>
+  
+<% for image in @images %>
+  <tr>
+	<td><%=image.id%></td>
+  <% for column in Image.content_columns %>
+    <% next if column.name == 'large' %>
+    <% if column.name == 'thumb' %>
+    <td><img src="<%= url_for :action => 'thumb', :id => image %>" alt="<%= image.caption %>" /></td>
+    <% else %>
+    <td><%=h image.send(column.name) %></td>
+    <% end %>
+  <% end %>
+    <td><%= link_to 'Show', :action => 'show', :id => image %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => image %></td>
+    <td><%= link_to 'Destroy', { :action => 'destroy', :id => image }, :confirm => 'Are you sure?', :method => :post %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Previous page', { :page => @image_pages.current.previous } if @image_pages.current.previous %>
+<%= link_to 'Next page', { :page => @image_pages.current.next } if @image_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New image', :action => 'new' %>

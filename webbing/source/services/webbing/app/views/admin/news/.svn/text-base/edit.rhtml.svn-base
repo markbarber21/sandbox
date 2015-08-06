@@ -1,0 +1,2 @@
+<h1>Editing news</h1>
+<%= render(:partial => "shared/admin/edit_object", :object =>@news, :locals => {:object_name => 'news'}) %>

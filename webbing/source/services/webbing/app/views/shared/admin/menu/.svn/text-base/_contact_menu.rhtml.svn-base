@@ -1,0 +1,6 @@
+<%=
+render_admin_menu("Contacts", [
+  link_to("List Contacts", :controller => 'contact', :action => 'list'),
+  link_to("Add Contact",  :controller => 'contact', :action => 'new'),
+  ])
+%>

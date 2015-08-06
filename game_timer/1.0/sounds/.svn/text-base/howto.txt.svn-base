@@ -1,0 +1,20 @@
+afconvert -f caff -d LEI16 click1.m4a click1.caf
+
+
+--
+
+
+http://forums.macrumors.com/showthread.php?t=335683
+	
+Preferred Audio Formats in iPhone OS
+For uncompressed (highest quality) audio, use 16-bit, little endian, linear PCM audio data packaged in a CAF file. You can convert an audio file to this format in Mac OS X using the afconvert command-line tool, as shown here:
+
+Code:
+
+/usr/bin/afconvert -f caff -d LEI16 {INPUT} {OUTPUT}
+
+The afconvert tool lets you convert to a wide range of audio data formats and file types. See the afconvert man page, and enter afconvert -h at a shell prompt, for more information.
+
+For compressed audio when playing one sound at a time, and when you don’t need to play audio simultaneously with the iPod application, use the AAC format packaged in a CAF or m4a file.
+
+For less memory usage when you need to play multiple sounds simultaneously, use IMA4 (IMA/ADPCM) compression. This reduces file size but entails minimal CPU impact during decompression. As with linear PCM data, package IMA4 data in a CAF file. 

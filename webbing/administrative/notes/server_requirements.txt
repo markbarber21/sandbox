@@ -1,0 +1,4 @@
+- Image Magic
+- RedCloth
+ - Used for text to HTML formatting
+ * sudo gem install RedCloth

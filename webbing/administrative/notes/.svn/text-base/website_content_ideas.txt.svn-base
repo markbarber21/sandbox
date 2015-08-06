@@ -1,0 +1,126 @@
+# General comments
+
+Some of these things are "sections" and some are "pages". Pages contain sections (at least the front page does).
+
+Pages have pictures and text. Some are like lists (news, portfolio, locations, FAQ). Some are informational (About Us, Our Mission, Contact Us).  It seems like we could probably generalize this concept and generate any number of pages. Of course, there needs to be a default setup as well -- give the customers some place to start.
+
+Sections are like little pages. They can be lists (Links) or informational (Contact Information, Legal Stuff). Sections can also be links to other pages.
+
+In general, a site will have some number of pages, which are all structurally similar, but have different labels and content.
+
+
+# Data Ideas
+
+## In General
+
+(1ea)	Logo
+(1ea)	Banner
+(1ea)	Icon
+(1ea)	Company Name
+(1ea)	Company Description (About Us)
+
+(many)	Contact Information/Locations
+ - (O)		:description, :string
+ - (M)		:type, :integer
+ - (M)		:name, :string
+ - (O)		:adr_line1, :string
+ - (O)		:adr_line2, :string
+ - (O)		:city, :string
+ - (O)		:state, :string
+ - (O)		:postal_code, :string
+ - (O)		:phone, :string
+ - (O)		:cell, :string
+ - (O)		:office_phone, :string
+ - (O)		:fax, :string
+ - (O)		:email, :string
+ - (O)		:image_id, :integer  (has_one)
+
+script/generate model Admin::contact description:string type:integer name:string adr_line1:string adr_line2:string city:string  state:string postal_code:string phone:string cell:string office_phone:string fax:string email:string image_id:integer
+
+
+(many)	Services (Portfolio Category/Testimonial Category, if entries exist)
+ - (M)		title:string
+ - (O)		description:text
+ - (O)		image_id:integer  (has_one)
+ - (O)		(has_many) Portfolio Entries
+ - (O)		(has_many) Testimonial Entries
+
+script/generate model service_entry title:string description:text image_id:integer
+ruby script/generate scaffold service_entry Admin::service
+
+(many)	Portfolio Entry	
+ - (O)		image_id:integer  (has_one)
+ - (O)		title:string
+ - (O)		description:text
+ - 			(belongs_to) Services
+
+script/generate model portfolio_entry title:string description:text image_id:integer
+ruby script/generate scaffold portfolio_entry Admin::portfolio
+
+(many)	Testimonial Entry
+ - (M)		customer_name:string
+ - (O)		testimonial:text
+ - 			(belongs_to) Services
+
+script/generate model testimonial_entry customer_name:string testimonial:text
+ruby script/generate scaffold testimonial_entry Admin::Testimonial
+
+(many)	Links/Affiliates/Recommendations
+ - (M)		title:string
+ - (M)		link:text
+ - (O)		image_id:integer  (has_one)
+
+script/generate model recommendation title:string link:text image_id:integer
+ruby script/generate scaffold recommendations Admin::Recommendation
+
+(many)	News / What's New
+ - (M)		title:string
+ - (M)		date_stamp:date (non Editable)
+ - (O)		who:string
+ - (M)		post:text
+ - (O)		image_id:integer  (has_one)
+
+(many)	Disclosures, Legal Stuff (something that needs to be on every page)
+ - (M)		Description
+
+script/generate model disclosure description:text
+ruby script/generate scaffold disclosures Admin::Disclosure
+
+(many)	Pictures
+ - (m)		content_type
+ - (O)		caption
+ - (m)		large
+ - (m)		thumb
+ - 			(belongs_to) Contacts
+ - 			(belongs_to) Services
+ - 			(belongs_to) Portfolio Entry
+ - 			(belongs_to) Links
+ - 			(belongs_to) News
+
+
+To Come Latter if needed, some concepts can be encapsulated in above list.
+
+FAQ
+Newsletter
+Locations (although, if they have multiple locations, they can probably afford a professional, custom website :)
+Contact Us
+Mission
+
+
+## Real Estate Specific
+
+MLS/Property listings/search
+
+## Construction Specific
+
+Safety
+
+
+# Other possible target markets
+
+## Restaurants (mom and pop shops)
+ - Pizza Amadeus
+ - Philadelphian
+
+Need to be able to post a menu (list of picture, title, text)
+   

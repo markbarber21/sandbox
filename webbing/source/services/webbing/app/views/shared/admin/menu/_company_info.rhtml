@@ -1,0 +1,8 @@
+<%=
+render_admin_menu("Company", [
+  link_to("Information", :controller => 'company_info', :action => "information"),
+  link_to("Branding", :controller => 'company_info', :action => "branding"),
+  link_to("Coloring", :controller => 'company_info', :action => "coloring"),
+  link_to("Section Settings", :controller => 'company_info', :action => "section_settings"),
+  ])
+%>

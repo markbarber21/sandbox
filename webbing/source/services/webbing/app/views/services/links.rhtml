@@ -1,0 +1,24 @@
+<h1>Our Recommendations</h1>
+
+<div id="recommend-list">
+	<ul>
+	<% for recommendations in @recommendations %>
+		<tr valign="top" > <!-- class="<%= cycle('list-line-odd', 'list-line-even') %>">			 -->
+			<li>
+				<div class="recommend-item">
+					<%if recommendations.image_id%>
+							<%= render(:partial => "shared/image/icon_link", :object =>recommendations.image_id, :locals => {:link => recommendations.link}) %>
+					<%end%>
+				
+					<A class="title" href="http://<%=h recommendations.link %>"><%=h recommendations.title %></A>
+				</div>
+			</li>
+		</tr>
+	<% end %>
+	</ul>
+</div>
+
+<%= link_to 'Previous page', { :page => @recommendations_pages.current.previous } if @recommendations_pages.current.previous %>
+<%= link_to 'Next page', { :page => @recommendations_pages.current.next } if @recommendations_pages.current.next %> 
+
+<br />

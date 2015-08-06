@@ -1,0 +1,306 @@
+<style type="text/css">
+
+body { background-color: <%=@customer_props[:background_clr]%>; }
+
+h1 {
+  font:  150% sans-serif;
+  color: <%= @customer_props[:H1_clr]%>;
+  border-bottom: 3px dotted <%=@customer_props[:dot_clr]%>;
+}
+
+// by default frame 3 is the rule, unless over-ridden
+a {
+	color: <%=@customer_props[:frame3_txt_clr]%>; 
+}
+
+a:link{
+	color: <%=@customer_props[:frame3_txt_clr]%>; 
+}
+
+a:visited {
+	color: <%=@customer_props[:H2_clr]%>;
+}
+
+a:hover {
+/*	text-decoration: underline overline;
+	font-size: 110%;
+*/
+}
+
+hr {
+	border-color: <%=@customer_props[:dot_clr]%>;
+}
+
+/* START:notice */
+#notice {
+  border: 2px solid red;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: #f0f0f0;
+  font: bold smaller sans-serif;
+}
+/* END:notice */
+
+#welcome_desc {
+	padding: 15px;
+	font-size: 125%;
+	color: <%=@customer_props[:H2_clr]%>;	
+}
+
+.disclose {
+	margin-top: 3em;
+	text-align:   center;
+	font-size: 80%;
+	color: <%=@customer_props[:H2_clr]%>;
+}
+
+/*==========  LAYOUT ==========*/
+
+/* Styles for main page */
+/*6699cc*/
+#banner {
+  background: <%=@customer_props[:frame1_clr]%>;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 28px;
+  border-bottom: 2px solid;
+  font: small-caps 40px/40px "Times New Roman", serif;
+  color: <%=@customer_props[:frame1_txt_clr]%>;
+  text-align: center;
+}
+
+#banner img {
+  float: left;
+  height: 60px;  //<%= @system_props[:company_banner_height]%>px;
+  width: <%= @system_props[:company_banner_width]%>px;
+}
+
+#columns {
+  width: 100%;
+  height: 100%;
+  background: <%=@customer_props[:frame2_clr]%>;
+}
+
+#side {
+  float: left;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: <%= @system_props[:company_sidebar_width]%>px;
+  background: <%=@customer_props[:frame2_clr]%>;
+}
+
+#side a {
+  padding-left: 1em;
+  color: <%=@customer_props[:frame2_txt_clr]%>;
+}
+
+#side img {
+	padding-top: 18px;
+	padding-bottom: 25px;
+	height: <%= @system_props[:company_sidebar_height]%>px;
+	width: <%= @system_props[:company_sidebar_width]%>px;
+}
+
+#side .main_link {
+	padding-left: 2em;
+}
+
+#main {
+	margin-left: <%= @system_props[:company_sidebar_width]%>px;
+	padding: 10px;
+	right: 0px;
+
+	background-color: <%=@customer_props[:frame3_clr]%>;
+}
+
+#main_inner {
+
+	color: <%=@customer_props[:frame3_txt_clr]%>; 
+
+	padding: 10px;
+
+	min-height: 550px
+}
+
+
+/*==========  NEWS STYLES ==========*/
+#news-list .news-title {
+	font-size: 200%;
+	color: <%=@customer_props[:H2_clr]%>;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+#news-list .news-who {
+	color: <%=@customer_props[:H2_clr]%>;
+	A:hover {text-decoration: underline; color: blue;}
+}
+
+#news-list .news-body {
+	padding: 10px;
+}
+
+#news-list .news-posted {
+	color: <%=@customer_props[:H2_clr]%>;
+	padding-bottom: 2px;
+}
+
+#news-list .news-comment {
+	color: <%=@customer_props[:H2_clr]%>;
+	padding-bottom: 1px;
+//	width: 9em;
+//	border-bottom-style: solid;
+//	border-width: 2px;
+//	text-align: center;
+//	vertical-align: middle;
+
+}
+
+.news-post {
+	border-bottom-style: solid;
+	border-bottom-color: <%=@customer_props[:dot_clr]%>;
+	border-width: 2px;
+	padding-bottom: 5px;
+	margin-bottom: 10px;	
+}
+
+#news-list .news-links {
+	position: absolute;
+	font-size: 120%;
+	width: 71%;
+	padding: 10px;
+}
+
+#news-list .news-links .news-order{
+	float: left;
+	
+	text-align: left;
+}
+
+#news-list .news-links .news-archive {
+	float: right;
+	text-align: right;
+}
+
+/*News Comments*/
+
+#news-list .comment-block{
+	width: 80%;
+	padding-left: 20px;
+}
+
+#news-list .comment-caption {
+	color: <%=@customer_props[:H3_clr]%>;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	font-weight: bold;
+}
+
+#news-list .comment-body {
+	padding-left: 20px;
+}
+
+#news-list .comment-who {
+	color: <%=@customer_props[:H3_clr]%>;
+	padding-left: 10px;
+}
+
+
+/*==========  CONTACT STYLES ==========*/
+#contact-list .contact-name {
+	font-size: 150%;
+	color: <%=@customer_props[:H2_clr]%>;
+}
+
+#contact-list .contact-sub {
+	font-size: 115%;
+	color: <%=@customer_props[:H2_clr]%>;
+}
+
+#contact-list .contact-entry {
+	padding-left: 10px;
+}
+
+#contact-list .contact-image {
+	padding: 15px;
+	float: right;
+}
+
+/*==========  SERVICE STYLES ==========*/
+#services-list {
+	
+}
+
+#services-list .title {
+	padding-left: 10px;
+	font-size: 150%;
+	padding-bottom: 8px;
+}
+
+#services-list .desc {
+	padding-left: 50px;
+}
+
+#services-list .v_align {
+	vertical-align: middle;
+}
+
+#services-list .service-item {
+	padding-bottom: 15px;
+}
+
+#all_srv_links {
+	padding-top: 1em;
+	
+	border-top-style: groove;
+	border-color: <%=@customer_props[:dot_clr]%>;
+	border-width: thin;
+	
+	text-align: center;	
+}
+
+#all_srv_links .service_link {
+	display: inline-block;
+	margin-right: 1.5em;
+	margin-left: 1.5em;
+}
+
+/*==========  GALLERY STYLES ==========*/
+#gallery_block {
+	padding: 30px;
+	padding-left: 50px;
+}
+
+#gallery_thumb {
+	text-align: center;
+	display: inline-block;
+	padding: 10px;
+	max-width: 160px;
+}
+
+#gallery_list {
+	padding: 10px;
+}
+
+#gallery_desc {
+	padding-left: 20px;
+}
+
+#gallery_label{
+	text-align: center;
+	text-transform: capitalize;
+}
+
+#gallery_image_right{
+	padding: 10px;
+	text-align: center;
+}
+
+/*==========  Recommend Link STYLES ==========*/
+
+.recommend-item {
+	padding-bottom: 5px;
+}
+
+
+</style>

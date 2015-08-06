@@ -1,0 +1,36 @@
+<h1>Listing recommendations / Links</h1>
+
+<div id="admin-list">
+	<table cellpadding="5" cellspacing="0">
+		<tr>
+		<% for column in Recommendations.content_columns %>
+		  <th><%= column.human_name %></th>
+		<% end %>
+		</tr>
+
+		<% for recommendations in @recommendations %>
+		<tr valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
+		<% for column in Recommendations.content_columns %>
+		  <td><%=h recommendations.send(column.name) %></td>
+		<% end %>
+		
+		<td>
+			<%if recommendations.image_id%>
+				<%= render(:partial => "shared/image/thumb", :object =>recommendations.image_id, :locals => {:desc => recommendations.title}) %> 
+			<%end%>
+		</td>
+				
+		  <td><%= link_to 'Show', :action => 'show', :id => recommendations %></td>
+		  <td><%= link_to 'Edit', :action => 'edit', :id => recommendations %></td>
+		  <td><%= link_to 'Destroy', { :action => 'destroy', :id => recommendations }, :confirm => 'Are you sure?', :method => :post %></td>
+		</tr>
+		<% end %>
+	</table>
+</div>
+
+<%= link_to 'Previous page', { :page => @recommendations_pages.current.previous } if @recommendations_pages.current.previous %>
+<%= link_to 'Next page', { :page => @recommendations_pages.current.next } if @recommendations_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New recommendations', :action => 'new' %>

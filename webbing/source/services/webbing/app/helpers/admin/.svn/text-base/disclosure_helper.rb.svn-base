@@ -1,0 +1,2 @@
+module Admin::DisclosureHelper
+end

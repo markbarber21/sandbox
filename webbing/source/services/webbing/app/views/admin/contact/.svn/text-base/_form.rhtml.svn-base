@@ -1,0 +1,45 @@
+<%= error_messages_for 'contact' %>
+
+<!--[form:contact]-->
+<%= render(:partial => "shared/admin/form_change_image", :object => 'contact') %>
+
+<p><label for="contact_type_location">Is Location</label><br/>
+<%= check_box 'contact', 'type_location'  %></p>
+
+<p><label for="contact_description">Description</label><br/>
+<%= text_field 'contact', 'description'  %></p>
+
+<p><label for="contact_name">Name</label><br/>
+<%= text_field 'contact', 'name'  %></p>
+
+<p><label for="contact_adr_line1">Adr line1</label><br/>
+<%= text_field 'contact', 'adr_line1'  %></p>
+
+<p><label for="contact_adr_line2">Adr line2</label><br/>
+<%= text_field 'contact', 'adr_line2'  %></p>
+
+<p><label for="contact_city">City</label><br/>
+<%= text_field 'contact', 'city'  %></p>
+
+<p><label for="contact_state">State</label><br/>
+<%= text_field 'contact', 'state'  %></p>
+
+<p><label for="contact_postal_code">Postal code</label><br/>
+<%= text_field 'contact', 'postal_code'  %></p>
+
+<p><label for="contact_phone">Phone</label><br/>
+<%= text_field 'contact', 'phone'  %></p>
+
+<p><label for="contact_cell">Cell</label><br/>
+<%= text_field 'contact', 'cell'  %></p>
+
+<p><label for="contact_office_phone">Office phone</label><br/>
+<%= text_field 'contact', 'office_phone'  %></p>
+
+<p><label for="contact_fax">Fax</label><br/>
+<%= text_field 'contact', 'fax'  %></p>
+
+<p><label for="contact_email">Email</label><br/>
+<%= text_field 'contact', 'email'  %></p>
+<!--[eoform:contact]-->
+

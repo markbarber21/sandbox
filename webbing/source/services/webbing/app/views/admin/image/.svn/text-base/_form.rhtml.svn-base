@@ -1,0 +1,12 @@
+<%= error_messages_for 'image' %>
+
+<!--[form:image]-->
+
+<p><label for="image_caption">Caption</label><br/>
+<%= form.text_field 'caption'  %></p>
+
+<p><label for="image_large">Replace Image:</label><br/>
+<%= form.file_field 'uploaded_picture' %></p>
+
+<!--[eoform:image]-->
+

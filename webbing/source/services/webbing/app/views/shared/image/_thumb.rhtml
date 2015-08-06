@@ -1,0 +1,5 @@
+<div class="transOFF" onmouseover="this.className='transON'" onmouseout="this.className='transOFF'">
+	<a class="thumb_href_style" href="<%= url_for :only_path => false, :controller => "/services", :action => 'image', :id => thumb %>" rel="lightbox" >
+		<img class="thumb_style" src="<%= url_for :only_path => false, :controller => "/services", :action => 'thumb', :id => thumb %>" alt="<%= desc if desc %>">
+	</a>
+</div>

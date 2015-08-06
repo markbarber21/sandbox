@@ -1,0 +1,20 @@
+<%= error_messages_for 'service_entry' %>
+
+<!--[form:service_entry]-->
+<%= render(:partial => "shared/admin/form_change_image", :object => 'service_entry') %>
+
+<p><label for="service_entry_title">Title</label><br/>
+<%= text_field 'service_entry', 'title'  %></p>
+
+<p><label for="service_entry_description">Description</label><br/>
+<%= text_area 'service_entry', 'description'  %></p>
+
+<p><label for="service_entry_sort_order">Sort Priority</label><br/>
+The higher the value, the earlier it will appear.<br/>
+<%= text_field 'service_entry', 'sort_order'  %></p> 
+
+<p><label for="service_entry_disp_type">Display entries as a List View.  The default is thumbnail view.</label><br/>
+<%= check_box 'service_entry', 'disp_type'  %></p>
+
+<!--[eoform:service_entry]-->
+
